@@ -1,0 +1,68 @@
+{
+  "inspector_id": "INSP-01-CANON",
+  "file_code": "I01_CANON_CONTINUITY",
+  "inspector_name": "Canon Continuity & Timeline Anchor Inspector",
+  "category_group": "Canon & Custody Governance",
+  "specialty": "Canon Continuity, Timeline Anchor & Historical Deposit Verification",
+  "badge_icon": "ShieldCheck",
+  "badge_color": "emerald",
+  "start_time": "2026-08-23T04:40:01.100Z",
+  "end_time": "2026-08-23T04:40:01.320Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to strictly enforce canon timeline continuity across Book boundaries without retrospective distortion, retconning, or unanchored spatial displacements.",
+    "review_methodology": "1. Verify temporal opening anchors to the precise morning following Book I reconciliation. 2. Enforce physical location taxonomy (licensed guesthouse in Oristano vs forbidden safehouse tropes). 3. Audit physical deposit integrity (the Eye of Adrastea must remain sealed in the municipal receiving room, never brought into the guesthouse or onto any vessel). 4. Hunt for subtle retcon drifts where characters invent unrecorded previous agreements.",
+    "drift_detection_heuristics": [
+      "Scan for ungrounded temporal leaps bypassing the morning-after recovery.",
+      "Detect unauthorized relocation of the Eye into personal quarters or vehicles.",
+      "Reject any mention of Cagliari laboratory tests or third-party interventions.",
+      "Enforce that all 12 amulets and the plant-fibre cluster remain in their established physical custody states."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Safehouse Trope Mutation",
+      "failure_signature": "Using 'safehouse', 'bunker', or militarized language to describe standard civil lodging.",
+      "audit_result": "PASS - Zero occurrences. Explicitly verified as licensed guesthouse."
+    },
+    {
+      "pattern_name": "Relic Spatial Leakage",
+      "failure_signature": "Allowing the Eye of Adrastea to enter the guesthouse, be packed into luggage, or brought to Alghero.",
+      "audit_result": "PASS - Eye confirmed permanently stationary in the municipal receiving room under civil deposit."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-CANON-01",
+    "RULE-CANON-02",
+    "RULE-CANON-03",
+    "RULE-CANON-04"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-CANON-01",
+      "paragraph_locator": "Paragraph 1 (Opening)",
+      "exact_verbatim_quote": "The morning arrived with the heavy, persistent rhythm of autumn rain drumming against the terracotta roof tiles of the licensed guesthouse in Oristano. The morning was quiet and peaceful throughout the house.",
+      "analysis": "Temporal anchor is fixed immediately to the morning following Book I reconciliation in the licensed guesthouse in Oristano, completely avoiding safehouse tropes."
+    },
+    {
+      "rule_id": "RULE-CANON-03",
+      "paragraph_locator": "Paragraph 49",
+      "exact_verbatim_quote": "\"And no one will,\" Katia said with flat finality. The autumn storm continued its unhurried rhythm outside. \"The Eye of Adrastea stays in the municipal receiving room in Oristano.\"",
+      "analysis": "Katia re-verifies that the Eye never enters personal quarters or vessels, remaining stationary in municipal custody."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Test for unapproved spatial transfer",
+      "method": "Regex search for 'Eye.*(bag|pack|luggage|Sentina|train|Alghero)'",
+      "outcome": "0 violations found. The relic remains exclusively in the municipal receiving room."
+    }
+  ],
+  "findings": "Canon continuity passes all checks. The temporal anchor adheres to Book I resolution. The setting is verified as the licensed guesthouse in Oristano. The Eye remains strictly in the municipal receiving room.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "9ebc2b42d6c5de6e3bf36c0749dac53179b08bf1bb85a567c35ad086a15d4a6d",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

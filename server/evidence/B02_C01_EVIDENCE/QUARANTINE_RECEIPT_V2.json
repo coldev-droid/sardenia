@@ -1,0 +1,11 @@
+{
+  "transaction_id": "QR-20260823-G031-V2-CRITICAL-VETO-001",
+  "quarantined_bundle": {
+    "zip_filename": "B02_C01_PHYSICAL_AUDIT_BUNDLE_V2.zip",
+    "zip_bytes": 30780,
+    "zip_sha256": "ce036aa4c9894a9bd7742c8aa6a5dd2f78b191df72a9b27d7be45c58b1118210",
+    "chapter_sha256": "1386d85166c2652d101b59634942c2a22aa289fb9524d8b6843e9746a0aefb1e",
+    "contract_sha256": "7028ebac68d485dfdccdfe9e0fb0f7ea92c996af616bea5de558e149f0ee2587"
+  },
+  "status": "PERMANENTLY_QUARANTINED_NONCANONICAL"
+}

@@ -1,0 +1,10 @@
+{
+  "version": "V2",
+  "mode": "FULL_REPAIR_V2",
+  "audit_date": "2026-08-23T00:33:00Z",
+  "target_word_count_min": 4200,
+  "target_word_count_max": 5200,
+  "fail_closed": true,
+  "b02_c02_locked": true,
+  "authority_checkpoint": "059"
+}

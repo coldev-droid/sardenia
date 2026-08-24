@@ -1,0 +1,55 @@
+{
+  "inspector_id": "INSP-08-LOGISTICS",
+  "file_code": "I08_LOGISTICS",
+  "inspector_name": "Marine & Resource Prudence Inspector",
+  "category_group": "Heritage & Geography",
+  "specialty": "Maritime Safety, Cash Economy & Realistic Travel Logistics",
+  "badge_icon": "Anchor",
+  "badge_color": "teal",
+  "start_time": "2026-08-23T04:40:02.970Z",
+  "end_time": "2026-08-23T04:40:03.210Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to enforce physical maritime logic, realistic accounting in cash, and conservative seamanship. Rejects cavalier sailing in gales and unrealistic resource assumptions.",
+    "review_methodology": "1. Verify Maris calculates real travel, berth, and bunkering costs in tangible cash. 2. Verify conservative seamanship: Sentina must not put to sea in dangerous swell; crew must wait out gales. 3. Audit vessel preparation: check battery terminals, keel bolts, bilge levels, and spare lines.",
+    "drift_detection_heuristics": [
+      "Detect characters sailing into winter storms to save petty cash.",
+      "Reject digital/credit payments in favor of cash ledger economy.",
+      "Enforce maritime safety protocol over reckless heroics."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Reckless Seamanship Trope",
+      "failure_signature": "Putting to sea in autumn gales without checking engine compression or lines.",
+      "audit_result": "PASS - Explicit agreement to remain tied to pontoon if swell is heavy; bilge and battery pre-checks mandatory."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-LOG-01",
+    "RULE-LOG-02",
+    "RULE-LOG-03"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-LOG-01",
+      "paragraph_locator": "Paragraph 82-88",
+      "exact_verbatim_quote": "\"If the swell is too heavy, we remain tied to the pontoon. We do not risk the boat or the crew in a storm.\" \"Let this be understood without hesitation,\" Katia said firmly. \"The boat is a means of transport and a shelter for the winter months, nothing more.\"",
+      "analysis": "Seamanship is grounded in prudence and realistic risk management."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Maritime recklessness probe",
+      "method": "Check for forced departure in adverse weather",
+      "outcome": "0 reckless actions. Strict safety rules enforced."
+    }
+  ],
+  "findings": "Logistics and maritime discipline pass with distinction. All travel and mooring costs are grounded in realistic cash reserves.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "45cb781322ce2d0d75c249d468c318e20f54d8046d91b7cbb2eed043182561ee",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

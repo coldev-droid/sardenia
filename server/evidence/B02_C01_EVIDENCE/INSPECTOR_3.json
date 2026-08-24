@@ -1,0 +1,55 @@
+{
+  "inspector_id": "INSP-03-SPATIAL",
+  "file_code": "I03_SPATIAL_BOUNDARY",
+  "inspector_name": "Route Boundary & Spatial Staging Inspector",
+  "category_group": "Canon & Custody Governance",
+  "specialty": "Spatial Geography, Departure Threshold & Prohibited Transit Isolation",
+  "badge_icon": "MapPin",
+  "badge_color": "amber",
+  "start_time": "2026-08-23T04:40:01.650Z",
+  "end_time": "2026-08-23T04:40:01.890Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to enforce strict spatial containment. Prohibits narrative staging beyond the guesthouse threshold in Chapter 1. Specifically blocks rail platforms, train journeys, and Alghero arrivals until authorized in future units.",
+    "review_methodology": "1. Verify all interior action occurs within the guesthouse rooms (kitchen, hallway, vestibule). 2. Audit the departure scene: Maris, Inga, and Andr\u00e9 must exit the guesthouse front door and turn the corner into the rain. 3. Strictly confirm zero narrative depiction of Macomer station, train interiors, or Alghero harbor in this chapter.",
+    "drift_detection_heuristics": [
+      "Detect scene cuts to railway carriages, ticket barriers, or train compartments.",
+      "Detect premature cuts to Sentina at the Alghero marina.",
+      "Verify that departure terminates as characters turn the corner of the Oristano street."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Premature Transit Staging",
+      "failure_signature": "Depicting the journey aboard the Macomer train or arriving in Alghero.",
+      "audit_result": "PASS - Zero rail transit depicted. Action concludes at the guesthouse doorway."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-SPACE-01",
+    "RULE-SPACE-02",
+    "RULE-SPACE-03"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-SPACE-02",
+      "paragraph_locator": "Paragraph 199-204",
+      "exact_verbatim_quote": "Maris stepped out first across the granite door sill. His heavy leather boots splashed into the shallow water pooling upon the flagstones. Inga followed immediately behind him, pulling her oilskin hood forward over her brow to shield her eyes from the slanting rain. Andr\u00e9 stepped out last... The three figures disappeared into the grey, unbroken sheet of the Oristano rain.",
+      "analysis": "The chapter cleanly terminates the physical travel branch at the street threshold, obeying the strict staging boundary."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Boundary breach test",
+      "method": "Scan for 'carriage|platform|Macomer station|Alghero port arrival'",
+      "outcome": "0 scene cuts found outside Oristano guesthouse boundary."
+    }
+  ],
+  "findings": "Spatial boundary is completely intact. Staging is strictly confined to the guesthouse and terminates at the street corner in the rain.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "fd1e7e0fea8ab3ad46d91af4f04f0c8a59cc4518a10b1a1e0b3e6e1099828eb3",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

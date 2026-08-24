@@ -1,0 +1,27 @@
+{
+  "audit_version": "V3",
+  "authority": "LOCK_CROWN_REPAIR_CHECKPOINT_059",
+  "mode": "CANONICAL_V3_REPAIR",
+  "fail_closed": true,
+  "b02_c02_locked": true,
+  "word_count_rules": {
+    "min_prose_words": 4200,
+    "max_prose_words": 5200,
+    "exact_words": 4234,
+    "exact_paragraphs": 217
+  },
+  "diction_rules": {
+    "banned_words_count": 20,
+    "enforcement": "STRICT_FAIL_CLOSED"
+  },
+  "inspectors_count": 20,
+  "inspector_general_independent": true,
+  "swarm_domains": [
+    "Canon & Custody Governance",
+    "Story Tension & Adventure",
+    "Amulets & Metaphysics",
+    "Heritage & Geography",
+    "Style & Prose Craft",
+    "Adversarial & System Gate"
+  ]
+}

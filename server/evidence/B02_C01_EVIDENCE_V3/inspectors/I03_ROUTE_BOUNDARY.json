@@ -1,0 +1,21 @@
+{
+  "inspector_id": "INSP-03",
+  "inspector_name": "Route & Physical Boundary Inspector",
+  "specialty": "Route Boundaries",
+  "start_time": "2026-08-23T04:15:04.100Z",
+  "end_time": "2026-08-23T04:15:05.300Z",
+  "audit_doctrine": "Enforces spatial containment within Oristano guesthouse and rain departure.",
+  "owned_rules": [
+    "RULE-ROUTE-01",
+    "RULE-ROUTE-02"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "findings": "All 2 specialized evaluation criteria verified with 100% compliance. No canon drift or banned diction detected.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "b59b5e137b2c739c1a996dd09e01ca5f6c4bfeacee4ed9cbaa8dae042edadf70",
+  "normalized_sha256": "12de10ad8cd6b226cf46cc10cb72c9859aff4a698b4dd643103be2b40b40fad9"
+}

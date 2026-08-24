@@ -1,0 +1,57 @@
+{
+  "inspector_id": "INSP-09",
+  "inspector_name": "Prose Ending & Horizon Isolation Inspector",
+  "specialty": "Ending Boundary & Narrative Closure",
+  "start_time": "2026-08-23T04:15:16.100Z",
+  "end_time": "2026-08-23T04:15:17.300Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Enforces exact ending: Maris, Inga, and Andr\u00e9 disappear into Oristano rain at the street corner, Geronimo latches timber door, and calm routine resumes.",
+    "review_methodology": "Verifies final paragraphs for emotional restraint, closure, and zero cliffhanger or unauthorized forward leakage.",
+    "drift_detection_heuristics": [
+      "Ending must conclude with the quiet routine in Oristano guesthouse",
+      "Door is latched shut, shutting out the storm",
+      "Holding pattern is solidified"
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Ending Drift",
+      "failure_signature": "Ending on train platform or with forward flash",
+      "audit_result": "PASS: Perfect guesthouse threshold closure"
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-END-01",
+    "RULE-END-02"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-END-01",
+      "paragraph_locator": "Paragraph 208",
+      "exact_verbatim_quote": "The iron latch dropped smoothly into its keeper with a solid, reassuring click. The sound of the driving rain and the cold autumn wind was shut outside.",
+      "analysis": "Solid narrative latching."
+    },
+    {
+      "rule_id": "RULE-END-02",
+      "paragraph_locator": "Paragraph 217",
+      "exact_verbatim_quote": "The holding pattern was established, and the future would wait for the proper hour.",
+      "analysis": "Exact chapter ending verified."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Ending Scene Audit",
+      "method": "Verify final 10 paragraphs maintain stationary Oristano closure",
+      "outcome": "CLOSURE_VERIFIED_PASS"
+    }
+  ],
+  "findings": "Chapter ending is emotionally resonant, calm, and structurally sealed.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "b782d577d5e7355a7036971c0c19b9bb61336bbe8338aa47a26e92436d5a55b1",
+  "normalized_sha256": "a2b4874aeb57859cc86f667e931df224af99a6a4d8139e2dc825402a342df3bc"
+}

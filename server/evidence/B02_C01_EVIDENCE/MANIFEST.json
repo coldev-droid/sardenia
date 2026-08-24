@@ -1,0 +1,227 @@
+{
+  "authority": "LOCK_CROWN_REPAIR_CHECKPOINT_059",
+  "audit_version": "V3",
+  "total_payload_files": 55,
+  "files": {
+    "AUDIT_CONFIG.json": {
+      "size": 483,
+      "sha256": "267c094efd86f18c9442708c136e5a50fc3bcac74127d74982a2f7e8689e1b45"
+    },
+    "AUDIT_CONFIG.txt": {
+      "size": 80,
+      "sha256": "41b35bbc9d8fbf40138ff88173fc1dc2e55a61aa216392e4150c807aa077b38d"
+    },
+    "AUDIT_CONFIGURATION.json": {
+      "size": 672,
+      "sha256": "6fdb30323de22348c3fd454388916a40a59cfa267f33a4ac56be740e77eb215a"
+    },
+    "AUTHORITY_MATERIALIZATION.json": {
+      "size": 741,
+      "sha256": "3d2c41898c17863d718dc6e2e281cb3c464772b8dcc9646ebbe45ab872a9766e"
+    },
+    "B02_C01.md": {
+      "size": 25111,
+      "sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1"
+    },
+    "B02_C01_CONTRACT.md": {
+      "size": 2066,
+      "sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+    },
+    "CUSTODY_LEDGER.json": {
+      "size": 2405,
+      "sha256": "453c32fd21a9f2d2adb21cc5f2f3699a3aac3210c4038c00bee1ce153fc03e74"
+    },
+    "GENERATION_RECEIPT.json": {
+      "size": 528,
+      "sha256": "d842df3b2bfcf1c25b9c0307c95b7b25c94b0da6919475fdc8a17e517ca8d893"
+    },
+    "GIT_PROVENANCE.json": {
+      "size": 459,
+      "sha256": "139bdeb19a4f0c2afc889e1e63ec2dfe004356b8a87db432b80f60d0f94592e0"
+    },
+    "GIT_PROVENANCE.txt": {
+      "size": 380,
+      "sha256": "eb528212248c6234ce93109b8a02b7227498320f93670a9961c0dc32c1b5072a"
+    },
+    "INSPECTOR_1.json": {
+      "size": 4132,
+      "sha256": "9c32e9a873e492346c9803d4881f8ce1767fd6b21128ca1ac21a51fb4630e8f7"
+    },
+    "INSPECTOR_10.json": {
+      "size": 3046,
+      "sha256": "b00a2b8e9d6eba36f138b1acc1487131dea135b774909fbae262f8c50ff05136"
+    },
+    "INSPECTOR_11.json": {
+      "size": 3566,
+      "sha256": "95fc6fda740d574b29d0fbeced482e4a5528809b0916116a4dc0ce0e648035e1"
+    },
+    "INSPECTOR_12.json": {
+      "size": 3986,
+      "sha256": "5f7b59a18df198038a84d859223f7f6aac122a6091a958883f5cd9ca7c2c2871"
+    },
+    "INSPECTOR_13.json": {
+      "size": 3246,
+      "sha256": "03c2c7f6089dce0559aea2083389751182fceb4ac4c2da6675a76a2433cab5b2"
+    },
+    "INSPECTOR_14.json": {
+      "size": 3001,
+      "sha256": "5fcee2eea33ada98571776171c2f446a750626b3d140496793d4c90a1cc40d5c"
+    },
+    "INSPECTOR_15.json": {
+      "size": 3407,
+      "sha256": "3d502ea78ec6ea4afbbc8e10431eefda0e8ae6abce043bad5f820fe68cc3b33d"
+    },
+    "INSPECTOR_16.json": {
+      "size": 3324,
+      "sha256": "e75863ec90aa96362e33199b9384ab5073334250865325b10530eeec5bc99a21"
+    },
+    "INSPECTOR_17.json": {
+      "size": 3185,
+      "sha256": "eec03786ffd5357ce6f031e295c651125129be9edc64da72e0de1db17d755b48"
+    },
+    "INSPECTOR_18.json": {
+      "size": 3090,
+      "sha256": "1541bdc9561f1ff4432f71e5b28078a76d04e2aea43659a0b1882e16a7b14969"
+    },
+    "INSPECTOR_19.json": {
+      "size": 3537,
+      "sha256": "ad61a1a68fe12e34e83077d056f7a360ba3e8ab86e66e5730f3423da0e9f1ff2"
+    },
+    "INSPECTOR_2.json": {
+      "size": 4451,
+      "sha256": "8e05c8a1c02cc674de766b52dc8825f074df1a30776f9605830567a265e149d9"
+    },
+    "INSPECTOR_20.json": {
+      "size": 3453,
+      "sha256": "5d2a29ea1d1faa52b0880202af509f86e27151ac8227ffd7cfef96a0df888dce"
+    },
+    "INSPECTOR_3.json": {
+      "size": 3193,
+      "sha256": "1ba7feb4a2355e05a3b4f2c7ef91cf79d58fa044c2f9c8e3fa29b975491527e0"
+    },
+    "INSPECTOR_4.json": {
+      "size": 3514,
+      "sha256": "d7037da1096d804a0b2c8e3c1e29b62addd86c1735c69bfc4667793cf4c54f89"
+    },
+    "INSPECTOR_5.json": {
+      "size": 2652,
+      "sha256": "35482aa0d5cfa183ec4cafaaea77a6299c3470203d291271feb10d5387d243ab"
+    },
+    "INSPECTOR_6.json": {
+      "size": 2659,
+      "sha256": "950f51fa4c4a44d3cf97c6b7db2f02ad110c516e64f6763c3f69e21d9921724d"
+    },
+    "INSPECTOR_7.json": {
+      "size": 2702,
+      "sha256": "65ea0a4b7321f95248cd5c4394f8992ed18ec4d2215c4c447dee59262ed7b8eb"
+    },
+    "INSPECTOR_8.json": {
+      "size": 2852,
+      "sha256": "0baea13b7020a49ad47c7d08e366a5786cef0923e2bfd7d7e2957bd26ea83900"
+    },
+    "INSPECTOR_9.json": {
+      "size": 2413,
+      "sha256": "c2993bbc25136eb5d844642b55c0710df940b938215ecfb8dbe229bbf7b67eb9"
+    },
+    "INSPECTOR_GENERAL_REPORT.json": {
+      "size": 5509,
+      "sha256": "dd736e4373442173b7a229dbd8fd39d53ef70404864219590f4352a87bfeccd8"
+    },
+    "QUARANTINE_RECEIPT.json": {
+      "size": 1224,
+      "sha256": "e58c7a7cf4c38fbb947a8fe03d27ea59461314ab32dbdeddd20e4b27c8b29bc1"
+    },
+    "QUARANTINE_RECEIPT_V2.json": {
+      "size": 496,
+      "sha256": "66e411b72692ce0c827a4c9b5d0356afa1c46bcdf91add2e8ef414fc41ac7519"
+    },
+    "ROUTE_LEDGER.json": {
+      "size": 600,
+      "sha256": "6ef7b26173e3e77d01def20592ec6b99e492ef120e8ada5cbc8e40c938b1afa7"
+    },
+    "SOURCE_LEDGER.json": {
+      "size": 666,
+      "sha256": "1efef83a12740fdb141182818cd8f118b70dcee4f8ecd3cd55e2eb6cfffd19f8"
+    },
+    "inspectors/I01_CANON_CONTINUITY.json": {
+      "size": 4132,
+      "sha256": "9c32e9a873e492346c9803d4881f8ce1767fd6b21128ca1ac21a51fb4630e8f7"
+    },
+    "inspectors/I02_CUSTODY_ARCHITECTURE.json": {
+      "size": 4451,
+      "sha256": "8e05c8a1c02cc674de766b52dc8825f074df1a30776f9605830567a265e149d9"
+    },
+    "inspectors/I03_SPATIAL_BOUNDARY.json": {
+      "size": 3193,
+      "sha256": "1ba7feb4a2355e05a3b4f2c7ef91cf79d58fa044c2f9c8e3fa29b975491527e0"
+    },
+    "inspectors/I04_CHARACTER_CONSEQUENCE.json": {
+      "size": 3514,
+      "sha256": "d7037da1096d804a0b2c8e3c1e29b62addd86c1735c69bfc4667793cf4c54f89"
+    },
+    "inspectors/I05_SOURCE_VERIFICATION.json": {
+      "size": 2652,
+      "sha256": "35482aa0d5cfa183ec4cafaaea77a6299c3470203d291271feb10d5387d243ab"
+    },
+    "inspectors/I06_DICTION_GATE.json": {
+      "size": 2659,
+      "sha256": "950f51fa4c4a44d3cf97c6b7db2f02ad110c516e64f6763c3f69e21d9921724d"
+    },
+    "inspectors/I07_NARRATIVE_FLOW.json": {
+      "size": 2702,
+      "sha256": "65ea0a4b7321f95248cd5c4394f8992ed18ec4d2215c4c447dee59262ed7b8eb"
+    },
+    "inspectors/I08_LOGISTICS.json": {
+      "size": 2852,
+      "sha256": "0baea13b7020a49ad47c7d08e366a5786cef0923e2bfd7d7e2957bd26ea83900"
+    },
+    "inspectors/I09_ENDING_BOUNDARY.json": {
+      "size": 2413,
+      "sha256": "c2993bbc25136eb5d844642b55c0710df940b938215ecfb8dbe229bbf7b67eb9"
+    },
+    "inspectors/I10_ADVERSARIAL_INTEGRITY.json": {
+      "size": 3046,
+      "sha256": "b00a2b8e9d6eba36f138b1acc1487131dea135b774909fbae262f8c50ff05136"
+    },
+    "inspectors/I11_ANTI_BORING_PACING.json": {
+      "size": 3566,
+      "sha256": "95fc6fda740d574b29d0fbeced482e4a5528809b0916116a4dc0ce0e648035e1"
+    },
+    "inspectors/I12_TRANSCENDENT_MAGIC.json": {
+      "size": 3986,
+      "sha256": "5f7b59a18df198038a84d859223f7f6aac122a6091a958883f5cd9ca7c2c2871"
+    },
+    "inspectors/I13_ADRENALINE_TERROR.json": {
+      "size": 3246,
+      "sha256": "03c2c7f6089dce0559aea2083389751182fceb4ac4c2da6675a76a2433cab5b2"
+    },
+    "inspectors/I14_CROSS_CHAPTER_NOVELTY.json": {
+      "size": 3001,
+      "sha256": "5fcee2eea33ada98571776171c2f446a750626b3d140496793d4c90a1cc40d5c"
+    },
+    "inspectors/I15_ROUTE_CAVES_LOGISTICS.json": {
+      "size": 3407,
+      "sha256": "3d502ea78ec6ea4afbbc8e10431eefda0e8ae6abce043bad5f820fe68cc3b33d"
+    },
+    "inspectors/I16_MYTH_AUTHENTICITY.json": {
+      "size": 3324,
+      "sha256": "e75863ec90aa96362e33199b9384ab5073334250865325b10530eeec5bc99a21"
+    },
+    "inspectors/I17_ADVENTURE_FIELD_DETAIL.json": {
+      "size": 3185,
+      "sha256": "eec03786ffd5357ce6f031e295c651125129be9edc64da72e0de1db17d755b48"
+    },
+    "inspectors/I18_MACKENZIE_PROSE.json": {
+      "size": 3090,
+      "sha256": "1541bdc9561f1ff4432f71e5b28078a76d04e2aea43659a0b1882e16a7b14969"
+    },
+    "inspectors/I19_AMULET_MATH_MAGNETICS.json": {
+      "size": 3537,
+      "sha256": "ad61a1a68fe12e34e83077d056f7a360ba3e8ab86e66e5730f3423da0e9f1ff2"
+    },
+    "inspectors/I20_DRAMATIC_TWIST_TRAPS.json": {
+      "size": 3453,
+      "sha256": "5d2a29ea1d1faa52b0880202af509f86e27151ac8227ffd7cfef96a0df888dce"
+    }
+  }
+}

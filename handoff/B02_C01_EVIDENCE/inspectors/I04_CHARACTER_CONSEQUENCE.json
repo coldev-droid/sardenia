@@ -1,0 +1,68 @@
+{
+  "inspector_id": "INSP-04",
+  "inspector_name": "Character Consequence & Injury Reality Inspector",
+  "specialty": "Character Consequence & Medical Reality",
+  "start_time": "2026-08-23T04:15:06.110Z",
+  "end_time": "2026-08-23T04:15:07.410Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Audits Katia's physical state (sprained foot/ankle bound in linen, not cracked ribs), Andr\u00e9's bounded deck role, and dogs under named care.",
+    "review_methodology": "Checks character physical constraints and interpersonal dynamics against verified injury notes and trust boundaries.",
+    "drift_detection_heuristics": [
+      "Katia has sprained foot and ankle bound in clean linen, resting on a stool (never cracked ribs)",
+      "Andr\u00e9 has bounded yacht familiarity and deck work only; no keys, no engine authority, no restored trust",
+      "Mia and Tina behave as natural dogs under Geronimo's named care"
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Injury Escalation Drift",
+      "failure_signature": "Inventing cracked ribs or punctured lung for Katia",
+      "audit_result": "PASS: Sprained foot/ankle strictly depicted"
+    },
+    {
+      "pattern_name": "Andr\u00e9 Trust Overreach",
+      "failure_signature": "Granting Andr\u00e9 engine-maintenance or relic authority",
+      "audit_result": "PASS: Bounded yacht familiarity only"
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-CHAR-01",
+    "RULE-CHAR-02",
+    "RULE-CHAR-03"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-CHAR-01",
+      "paragraph_locator": "Paragraph 14",
+      "exact_verbatim_quote": "Her left foot and ankle were heavily wrapped in clean white linen, propped carefully atop a low wooden stool cushioned with a folded coat.",
+      "analysis": "Accurate physical injury depiction."
+    },
+    {
+      "rule_id": "RULE-CHAR-02",
+      "paragraph_locator": "Paragraph 59",
+      "exact_verbatim_quote": "Yet he held no key to any lock, possessed no authority over the deposit, and was excluded entirely from any decision regarding the relic itself.",
+      "analysis": "Andr\u00e9's bounded role explicitly enforced."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Rib Injury Audit",
+      "method": "Scan for 'cracked ribs', 'broken ribs', or torso trauma",
+      "outcome": "ZERO_MATCHES_PASS"
+    },
+    {
+      "test_name": "Andr\u00e9 Key/Authority Scan",
+      "method": "Audit for Andr\u00e9 possessing keys or signing authority",
+      "outcome": "CLEAN_PASS"
+    }
+  ],
+  "findings": "Character consequences, injuries, and relational boundaries match verified facts.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "9113a353c2076a13ef8a93fd90e2d0e8fe2d90fc400db433331e351f5a8fc3a7",
+  "normalized_sha256": "99fc9cdd80b8322a8e256814d34a6c7f05c92a91e030dca8756fe417e1bf64ff"
+}

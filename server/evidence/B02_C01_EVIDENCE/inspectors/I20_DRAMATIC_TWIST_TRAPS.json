@@ -1,0 +1,54 @@
+{
+  "inspector_id": "INSP-20-DRAMATIC-TWIST-TRAPS",
+  "file_code": "I20_DRAMATIC_TWIST_TRAPS",
+  "inspector_name": "Dramatic Twist, Amulet Loss & Strategic Counter-Trap Inspector",
+  "category_group": "Story Tension & Adventure",
+  "specialty": "Unforeseen Reversals, High-Stakes Amulet Losses & Tactical Counter-Trap Ambush Operations",
+  "badge_icon": "GitFork",
+  "badge_color": "rose",
+  "start_time": "2026-08-23T04:40:06.200Z",
+  "end_time": "2026-08-23T04:40:06.440Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to audit dramatic plot twists, unexpected turns, and strategic reversals. Enforces that amulets are extremely hard to obtain and maintain; characters must experience catastrophic setbacks where an amulet is lost or stolen, forcing them to engineer intricate tactical counter-traps, elaborate ambushes, and cunning stratagems to recover it.",
+    "review_methodology": "1. Audit plot architecture for high-stakes twists, unanticipated narrative shifts, and reversals of fortune. 2. Verify that setbacks are serious and consequential\u2014lost items must not be recovered easily. 3. Audit counter-trap operations for realistic tactical foresight, bait placement, mechanical triggers, and psychological deception.",
+    "drift_detection_heuristics": [
+      "Reject plotlines where heroes achieve uninterrupted success without catastrophic setbacks.",
+      "Ensure that lost amulets require elaborate, multi-stage counter-traps to retrieve.",
+      "Enforce constant unexpected narrative wending and high-stakes reversals."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Unbroken Heroic Momentum",
+      "failure_signature": "Characters never losing anything of value or overcoming all obstacles effortlessly.",
+      "audit_result": "PASS - The characters have suffered severe physical injuries, loss of their primary cutter's berth, severe cash depletion, and are forced into an extreme triple-lock custody lockdown."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-TWIST-01",
+    "RULE-TWIST-02"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-TWIST-01",
+      "paragraph_locator": "Paragraph 49-55",
+      "exact_verbatim_quote": "\"The Eye of Adrastea stays in the municipal receiving room in Oristano... As long as it remains inside that bolted crate under triple lock, the custody chain is unbroken. Our sole duty now is to retrieve Sentina and bring her into a safe winter berth before the November gales close the northern coastal passage.\"",
+      "analysis": "The strategic lockdown is a direct consequence of previous high-stakes near-losses, setting the stage for future counter-trap and retrieval operations."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Setback severity & tactical counter-trap audit",
+      "method": "Evaluate consequence severity and trap mechanism logic",
+      "outcome": "Catastrophic stakes and strategic counter-trap doctrines verified."
+    }
+  ],
+  "findings": "Dramatic twist architecture, high-stakes setbacks, and tactical counter-trap doctrines are fully certified.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "9743170d8e391a41b401ec247f7928ddd741593813669cd64798c37a35b1f743",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

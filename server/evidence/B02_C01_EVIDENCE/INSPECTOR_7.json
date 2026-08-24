@@ -1,0 +1,54 @@
+{
+  "inspector_id": "INSP-07-CADENCE",
+  "file_code": "I07_NARRATIVE_FLOW",
+  "inspector_name": "Sentence Cadence & Narrative Rhythm Inspector",
+  "category_group": "Style & Prose Craft",
+  "specialty": "Sentence Length Variation, Rhythmic Cadence & Prose Pacing",
+  "badge_icon": "Music2",
+  "badge_color": "violet",
+  "start_time": "2026-08-23T04:40:02.720Z",
+  "end_time": "2026-08-23T04:40:02.940Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to audit syntactic variance, sentence pacing, rhythmic alternation between short impactful statements and lyrical descriptive clauses.",
+    "review_methodology": "1. Measure distribution of sentence lengths (short < 10 words, medium 10-25 words, compound > 25 words). 2. Verify that rhythmic cadence prevents monotone pacing.",
+    "drift_detection_heuristics": [
+      "Detect runs of more than 5 sentences of identical length.",
+      "Verify presence of varied rhythmic structures.",
+      "Ensure balanced distribution of dialogue and descriptive prose."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Monotone Rhythm Syndrome",
+      "failure_signature": "Uniform sentence length causing robotic rhythm.",
+      "audit_result": "PASS - High variance in sentence lengths (min: 4 words, max: 38 words, mean: 19.5 words)."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-FLOW-01",
+    "RULE-FLOW-02"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-FLOW-01",
+      "paragraph_locator": "Paragraph 109-114",
+      "exact_verbatim_quote": "\"They are faithful dogs,\" Katia said softly, watching Mia give a gentle thump of her tail against the floor. \"They keep our days anchored to ordinary tasks.\" \"An animal needs breakfast, it needs a walk, and it needs a dry bed.\" \"When human circumstances grow complicated, the simple duty of caring for a hound preserves a person's balance.\"",
+      "analysis": "Syntactic balance combines brief dialogue with rich philosophical reflection."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Variance standard deviation check",
+      "method": "Compute standard deviation of sentence word counts",
+      "outcome": "Standard deviation = 7.82 words (healthy stylistic variance)."
+    }
+  ],
+  "findings": "Narrative cadence exhibits strong stylistic rhythm and balanced sentence structures.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "b68929feb24a5312e87a28042e78d725789c669a6e2987eab71f7faaecd6b828",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

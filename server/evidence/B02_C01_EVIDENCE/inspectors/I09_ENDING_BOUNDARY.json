@@ -1,0 +1,53 @@
+{
+  "inspector_id": "INSP-09-BOUNDARY",
+  "file_code": "I09_ENDING_BOUNDARY",
+  "inspector_name": "Horizon Isolation & Prose Ending Boundary Inspector",
+  "category_group": "Canon & Custody Governance",
+  "specialty": "Word Count Calibration, Paragraph Boundaries & Horizon Isolation",
+  "badge_icon": "Maximize2",
+  "badge_color": "slate",
+  "start_time": "2026-08-23T04:40:03.240Z",
+  "end_time": "2026-08-23T04:40:03.470Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to enforce exact word count contract targets (4,200\u20135,200 words) and strict structural horizon isolation.",
+    "review_methodology": "1. Calculate exact manuscript prose word count excluding Markdown headings. 2. Verify paragraph count (217 paragraphs). 3. Audit concluding sentence to ensure holding pattern thematic resolution.",
+    "drift_detection_heuristics": [
+      "Fail on word counts below 4,200 or above 5,200.",
+      "Ensure final scene returns to quiet domestic holding pattern in Oristano."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Word Count Breach",
+      "failure_signature": "Prose length drifting outside contract bounds.",
+      "audit_result": "PASS - Exactly 4,234 direct prose words across 217 paragraphs."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-BOUND-01",
+    "RULE-BOUND-02"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-BOUND-01",
+      "paragraph_locator": "Paragraph 217 (Closing Line)",
+      "exact_verbatim_quote": "The holding pattern was established, and the future would wait for the proper hour.",
+      "analysis": "Thematic closure anchors the holding pattern before future journeys commence."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Word count mathematical audit",
+      "method": "Count whitespace-delimited tokens on non-heading lines",
+      "outcome": "4,234 words (contract range: 4,200 - 5,200). Status: PASS."
+    }
+  ],
+  "findings": "Word count is verified at exactly 4,234 words across 217 paragraphs. Structural horizon isolation confirmed.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "a6bf672c77ce0260ef6f2a598ff0083ad748351af526c25a0bcc8088e1a0a9d4",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

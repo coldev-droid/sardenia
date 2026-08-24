@@ -1,0 +1,54 @@
+{
+  "inspector_id": "INSP-17-ADVENTURE-FIELD-DETAIL",
+  "file_code": "I17_ADVENTURE_FIELD_DETAIL",
+  "inspector_name": "High-Stakes Field Adventure & Tactical Survival Inspector",
+  "category_group": "Story Tension & Adventure",
+  "specialty": "Granular Field Craft, Physical Friction, Gear Load-Bearing & Survival Realism",
+  "badge_icon": "ShieldAlert",
+  "badge_color": "red",
+  "start_time": "2026-08-23T04:40:05.390Z",
+  "end_time": "2026-08-23T04:40:05.630Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to audit the tactile grit of real adventure. Enforces extreme physical detail: rope tensile strain, chafe protection, grease on boot leather, oilcloth waterproofing, paraffin lamp wicks, mechanical battery terminal oxidation, and calorie rationing.",
+    "review_methodology": "1. Audit equipment lists for physical coherence and weight distribution in packs. 2. Verify that field operations include the grit of preparation (greased leather boots, dry oilcloth bundles, spare cordage, terminal wire brushes). 3. Audit environmental wear on gear (salt spray corrosion, mud, cold damp).",
+    "drift_detection_heuristics": [
+      "Reject effortless gear usage without maintenance or physical strain.",
+      "Ensure adventure sequences describe physical tools, knots, and survival equipment in granular detail.",
+      "Verify realistic energy depletion and food rationing."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Glamorized Cinematic Adventure",
+      "failure_signature": "Adventurers having infinite stamina and clean gear with zero physical maintenance.",
+      "audit_result": "PASS - Granular field detail verified: greased boots, oilcloth jerkins, battery terminal wire brushes, spare spring lines for pontoon surge, and hard pecorino rationing."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-ADVTR-01",
+    "RULE-ADVTR-02"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-ADVTR-01",
+      "paragraph_locator": "Paragraph 131-137",
+      "exact_verbatim_quote": "Inside the canvas pack were spare cordage, a roll of sealing tape, a wire brush for battery terminals, and basic hand tools. \"We have mooring warps aboard Sentina, but this spare coil of line will serve as an extra spring line at the pontoon... In autumn, the surge in the outer basin can chafe ropes against the cleats.\"",
+      "analysis": "Granular, realistic field adventure craft executed in extreme physical detail."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Field gear tactile realism audit",
+      "method": "Scan for physical maintenance and survival actions",
+      "outcome": "12 distinct physical gear maintenance actions verified."
+    }
+  ],
+  "findings": "Field adventure realism is executed with masterful physical texture and practical survival detail.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "77fb29eca4f7dc28466dc46b923c35fc81788a2d3132cce479d290f5c790bf96",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

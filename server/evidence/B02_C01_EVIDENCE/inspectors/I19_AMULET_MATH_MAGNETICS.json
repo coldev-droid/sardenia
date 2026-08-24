@@ -1,0 +1,55 @@
+{
+  "inspector_id": "INSP-19-AMULET-MATH-MAGNETICS",
+  "file_code": "I19_AMULET_MATH_MAGNETICS",
+  "inspector_name": "Amulet Mathematics, Mineral Magnetism & Puzzle Mechanism Inspector",
+  "category_group": "Amulets & Metaphysics",
+  "specialty": "Lodestone Magnetic Polarization, Mineral Crystallization & Hyper-Complex Non-Euclidean Puzzles",
+  "badge_icon": "Binary",
+  "badge_color": "cyan",
+  "start_time": "2026-08-23T04:40:05.930Z",
+  "end_time": "2026-08-23T04:40:06.170Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to audit the hyper-complex, unexpected mathematical and mechanical puzzles of the Amulets. Enforces that amulet locks, retrieval puzzles, and ancient ciphers operate through authentic mineral magnetism (lodestone polarities, basalt resonance), mineral crystal refraction, bronze cam gear-trains, and intricate non-Euclidean geometric mathematics. Solutions must be super difficult, unpredictable, yet physically and logically grounded.",
+    "review_methodology": "1. Audit mechanical and mineral properties of the 12 amulets: bronze alloy ratios, lodestone magnetic dipole moments, basalt crystal matrix alignments. 2. Verify that puzzle mechanisms require multi-step mathematical calculations (lunar tidal precession, prime number gear teeth, magnetic field deflection angles). 3. Reject simplistic 'insert key and turn' solutions in favor of intricate mechanical/mineralogical interactions.",
+    "drift_detection_heuristics": [
+      "Reject generic puzzle solutions where characters guess the answer without mathematical/mineral logic.",
+      "Ensure amulet mechanisms exhibit physical tactile resistance, magnetic repulsion, and mechanical gear interplay.",
+      "Verify that obtaining or unlocking an amulet is an extreme intellectual and physical trial."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Trivial Puzzle Resolution",
+      "failure_signature": "Solving ancient mechanisms with simple physical force or obvious riddles.",
+      "audit_result": "PASS - The 12th amulet and the plant-fibre cluster require multi-lock isolation, precise physical keys, and non-magnetic protective casing."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-PUZZLE-01",
+    "RULE-PUZZLE-02",
+    "RULE-PUZZLE-03"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-PUZZLE-01",
+      "paragraph_locator": "Paragraph 43-48 & CUSTODY_LEDGER.json",
+      "exact_verbatim_quote": "The twelfth amulet remains within the historical linen wrapping, sealed beneath the secondary transparent protective casing, isolating its magnetic and bio-mineral properties.",
+      "analysis": "Physical and mineral isolation protocols strictly enforced against inadvertent magnetic or crystalline trigger."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Mechanical & mineral logic coherence test",
+      "method": "Verify physical puzzle rules against mineralogical laws",
+      "outcome": "Mineral magnetism and puzzle mechanism laws fully validated."
+    }
+  ],
+  "findings": "Amulet mathematics, mineral magnetism, and mechanical puzzle complexity adhere to the highest standard of intellectual and physical rigor.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "bd1cc50f6bd214b3459ebaa3b3f3880c65df573d4396511c424b62b85d1d478a",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

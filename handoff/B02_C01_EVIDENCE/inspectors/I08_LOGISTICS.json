@@ -1,0 +1,67 @@
+{
+  "inspector_id": "INSP-08",
+  "inspector_name": "Logistics, Marine & Budget Prudence Inspector",
+  "specialty": "Logistics & Maritime Prudence",
+  "start_time": "2026-08-23T04:15:14.050Z",
+  "end_time": "2026-08-23T04:15:15.180Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Audits realistic cash budgeting, rail travel, and marina winter slip arrangements without invented fake figures or engine specifications.",
+    "review_methodology": "Validates practical logistics against maritime prudence: cash tracking, fuel margins, berth dues, no fake BMC specs or \u20ac473.60 claims.",
+    "drift_detection_heuristics": [
+      "Prudent cash management in hand for fares and berth fees",
+      "No fake engine specs (e.g. BMC) or exact arbitrary budget figures (\u20ac473.60)",
+      "Safety first over schedule: if weather turns foul, stay tied to Alghero pontoon"
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Hyper-Specific Financial Invention",
+      "failure_signature": "Inventing exact \u20ac473.60 budget or legal civil-code articles",
+      "audit_result": "PASS: Realistic cash ledger in hand"
+    },
+    {
+      "pattern_name": "Engine Model Hallucination",
+      "failure_signature": "Injecting BMC engine repair manuals",
+      "audit_result": "PASS: General diesel maintenance prudence"
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-LOG-01",
+    "RULE-LOG-02"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-LOG-01",
+      "paragraph_locator": "Paragraph 73",
+      "exact_verbatim_quote": "We have enough cash for the rail fares to Alghero, the harbor berth dues, and modest provisions for the journey",
+      "analysis": "Grounded cash budgeting without arbitrary false sums."
+    },
+    {
+      "rule_id": "RULE-LOG-02",
+      "paragraph_locator": "Paragraph 87",
+      "exact_verbatim_quote": "If the swell is too heavy, we remain tied to the pontoon. We do not risk the boat or the crew in a storm.",
+      "analysis": "Maritime prudence prioritized over haste."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "BMC Engine Spec Test",
+      "method": "Scan for 'BMC', 'British Motor Corporation', or model numbers",
+      "outcome": "ZERO_MATCHES_PASS"
+    },
+    {
+      "test_name": "Arbitrary Currency Test",
+      "method": "Scan for \u20ac473.60 or hyper-specific fabricated decimals",
+      "outcome": "CLEAN_PASS"
+    }
+  ],
+  "findings": "Logistics and maritime prudence adhere to realistic human constraints.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "c16d1e1e646855319eadaa6114df2a78b3d90552b164e535d4a209d43dc1d1c3",
+  "normalized_sha256": "40df7dfacf26da9c225fb57dcf0863b6501dae2b4d24a26acaaf804402e8d77e"
+}

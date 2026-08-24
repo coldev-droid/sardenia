@@ -1,0 +1,66 @@
+{
+  "inspector_id": "INSP-06",
+  "inspector_name": "Style, Tone & Anti-Slop Diction Gate Inspector",
+  "specialty": "Diction Gate & Literary Tone",
+  "start_time": "2026-08-23T04:15:10.200Z",
+  "end_time": "2026-08-23T04:15:11.350Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Audits prose against 20+ banned cybernetic, corporate, militarized, and procedural tokens to ensure authentic literary prose.",
+    "review_methodology": "Automated regex token filtering across all 217 prose paragraphs.",
+    "drift_detection_heuristics": [
+      "Banned tokens: safehouse, tactical, operational parameters, holding the line, privacy protocols, sub-dermal, biometric, wiretap, surveillance, espionage, military bunker, supercharge, empower, tactical overlay",
+      "Enforce grounded sensory prose (rain, chicory, woodsmoke, stone, linen)"
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Cybernetic/Tactical Diction",
+      "failure_signature": "Using 'tactical', 'biometric', 'protocols'",
+      "audit_result": "PASS: 0 banned tokens present"
+    },
+    {
+      "pattern_name": "Corporate AI Slop",
+      "failure_signature": "Using 'supercharge', 'empower', 'streamline'",
+      "audit_result": "PASS: Clean literary style"
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-STYLE-01",
+    "RULE-STYLE-02"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-STYLE-01",
+      "paragraph_locator": "Paragraph 3",
+      "exact_verbatim_quote": "Inside the high-ceilinged kitchen, the air was thick with the scent of dark-roasted chicory, damp wool drying across the iron radiator pipes, and the sharp, alkaline tang of lime plaster",
+      "analysis": "Evocative, authentic historical prose."
+    },
+    {
+      "rule_id": "RULE-STYLE-02",
+      "paragraph_locator": "Paragraph 170",
+      "exact_verbatim_quote": "A cool draught slipped beneath the timber door sill, carrying the smell of wet granite, fallen leaves, and distant woodsmoke.",
+      "analysis": "Rich sensory texture without modern jargon."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Full Banned Lexicon Sweep",
+      "method": "Automated token check against 24 prohibited terms",
+      "outcome": "ZERO_VIOLATIONS_PASS"
+    },
+    {
+      "test_name": "Atmospheric Register Check",
+      "method": "Audit for historical grounded diction",
+      "outcome": "TONE_PASS"
+    }
+  ],
+  "findings": "Zero banned words detected. Grounded, organic literary cadence maintained throughout.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "a8b4d7793debfb8ba49a01fbf626ac9188e71ec4a2cd2db7107dc62ecf88ece9",
+  "normalized_sha256": "e5c5d41e7444db1fa005777f627034fb14f0aae8ab9e86093c49f20c8dcccf05"
+}

@@ -1,0 +1,67 @@
+{
+  "inspector_id": "INSP-03",
+  "inspector_name": "Route Boundary & Geographical Containment Inspector",
+  "specialty": "Spatial Boundary & Route Staging",
+  "start_time": "2026-08-23T04:15:04.050Z",
+  "end_time": "2026-08-23T04:15:05.200Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Enforces strict narrative boundary: chapter must conclude when Maris, Inga, and Andr\u00e9 exit guesthouse doorway and disappear into Oristano rain.",
+    "review_methodology": "Scans narrative ending for illicit geographical leakage into railway boarding, train carriages, Macomer junction, or Alghero port.",
+    "drift_detection_heuristics": [
+      "Strict cutoff at Oristano guesthouse departure into rain",
+      "Zero railway carriage dialogues or platform ticket punch scenes in G031",
+      "Sentina remains physically untouched at Alghero mooring"
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Rail Transit Leakage",
+      "failure_signature": "Depicting Macomer or Sassari train journey",
+      "audit_result": "PASS: Boundary strictly terminates in Oristano rain"
+    },
+    {
+      "pattern_name": "Premature Vessel Boarding",
+      "failure_signature": "Characters boarding Sentina in G031",
+      "audit_result": "PASS: Sentina untouched in Alghero"
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-ROUTE-01",
+    "RULE-ROUTE-02"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-ROUTE-01",
+      "paragraph_locator": "Paragraph 204",
+      "exact_verbatim_quote": "The three figures disappeared into the grey, unbroken sheet of the Oristano rain.",
+      "analysis": "Clean spatial cutoff perfectly executed."
+    },
+    {
+      "rule_id": "RULE-ROUTE-02",
+      "paragraph_locator": "Paragraph 215",
+      "exact_verbatim_quote": "Sentina waited at her berth in Alghero for the retrieval party to arrive.",
+      "analysis": "Vessel remains stationary and untouched."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Macomer/Sassari Transit Scan",
+      "method": "Verification of zero in-transit scenes beyond Oristano",
+      "outcome": "CONTAINMENT_VERIFIED_PASS"
+    },
+    {
+      "test_name": "Rail Platform Scene Check",
+      "method": "Audit for platform boarding or train motion",
+      "outcome": "ZERO_LEAKS_PASS"
+    }
+  ],
+  "findings": "Geographical boundary strictly enforced. Narrative stops precisely at guesthouse departure.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "95dc618e77bb9296a674bcd65cb2f9c89139423b909f489fedbcb7e2dac4d0bd",
+  "normalized_sha256": "50c3f22d66ee476d3e933128dde004230ee55aab706aff1cb0e3a54d4870c88f"
+}

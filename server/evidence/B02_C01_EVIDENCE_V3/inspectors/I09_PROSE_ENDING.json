@@ -1,0 +1,21 @@
+{
+  "inspector_id": "INSP-09",
+  "inspector_name": "Prose Ending & Horizon Isolation Inspector",
+  "specialty": "Ending Boundary Gate",
+  "start_time": "2026-08-23T04:15:16.100Z",
+  "end_time": "2026-08-23T04:15:17.300Z",
+  "audit_doctrine": "Enforces exact departure boundary into Oristano rain without transit leaks.",
+  "owned_rules": [
+    "RULE-END-01",
+    "RULE-END-02"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "findings": "All 2 specialized evaluation criteria verified with 100% compliance. No canon drift or banned diction detected.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "d8a8e4570df4122a70fb814ee72011d4eed678bfe81f56e82a85c7314ab6ce3e",
+  "normalized_sha256": "345310d203928aa084bbee96011988621aed45620a6bc147dbb37c9eb7741015"
+}

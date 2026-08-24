@@ -1,0 +1,67 @@
+{
+  "inspector_id": "INSP-05",
+  "inspector_name": "Source History & Evidence Integrity Inspector",
+  "specialty": "Source Verification & Evidence Ledgers",
+  "start_time": "2026-08-23T04:15:08.020Z",
+  "end_time": "2026-08-23T04:15:09.150Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Audits 12 amulets total (1 introduced), plant-fibre cluster on outside of linen under clear casing, and complete absence of Cagliari analysis.",
+    "review_methodology": "Verifies historical artifact details against Book I reconciliation ledger and checks for false scientific analysis claims.",
+    "drift_detection_heuristics": [
+      "12 amulets total with exactly 1 introduced during Book I",
+      "Plant-fibre cluster is on outside of linen under transparent secondary casing, untouched and unsampled",
+      "Zero Cagliari laboratory analysis or scientific testing"
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Amulet Count Drift",
+      "failure_signature": "Incorrect amulet total or multiple introduced relics",
+      "audit_result": "PASS: 12 amulets (1 introduced) verified"
+    },
+    {
+      "pattern_name": "False Cagliari Analysis",
+      "failure_signature": "Inventing botanical lab reports from Cagliari",
+      "audit_result": "PASS: Untouched and unsampled verified"
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-SRC-01",
+    "RULE-SRC-02"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-SRC-01",
+      "paragraph_locator": "Paragraph 44",
+      "exact_verbatim_quote": "The twelfth amulet remains exactly where it was placed during the custody reconciliation... within the historical linen wrapping, sealed beneath the secondary transparent protective casing.",
+      "analysis": "Amulet placement verified."
+    },
+    {
+      "rule_id": "RULE-SRC-02",
+      "paragraph_locator": "Paragraph 48",
+      "exact_verbatim_quote": "There is no laboratory analysis from Cagliari, because no sample was ever taken there, and no one from outside was ever permitted to touch it.",
+      "analysis": "Prohibition of false analysis confirmed."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Cagliari Lab Report Test",
+      "method": "Scan for chemical/botanical analysis claims in Cagliari",
+      "outcome": "ZERO_MATCHES_PASS"
+    },
+    {
+      "test_name": "Amulet Math Check",
+      "method": "Verify 11 historical + 1 introduced = 12 total",
+      "outcome": "MATH_VERIFIED_PASS"
+    }
+  ],
+  "findings": "Source verification and relic configurations verified with 100% precision.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "ed80c76ecc64a67bc0b9e7a8e292be4f5dc42e082e9aed9529986c4cfb3400b4",
+  "normalized_sha256": "bfa030de9ecc4320959521181caf3dbbf529d1f378dc2361d186ac3e93c0a3a3"
+}

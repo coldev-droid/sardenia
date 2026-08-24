@@ -1,0 +1,17 @@
+{
+  "authority": "LOCK_CROWN_REPAIR_CHECKPOINT_059",
+  "unit": "B02_C01/G031",
+  "staging_boundary": "ORISTANO_GUESTHOUSE_DEPARTURE",
+  "permitted_geographies": [
+    "Oristano Licensed Guesthouse",
+    "Oristano Municipal Receiving Room (relic stationary)"
+  ],
+  "forbidden_geographies_in_g031": [
+    "Railway platform boarding",
+    "Macomer junction in-transit",
+    "Sassari transit corridor",
+    "Alghero port arrivals"
+  ],
+  "exit_condition": "Maris, Inga, and Andr\u00e9 exit guesthouse doorway and disappear into Oristano rain at the street corner",
+  "status": "BOUNDARY_VERIFIED_PASS"
+}

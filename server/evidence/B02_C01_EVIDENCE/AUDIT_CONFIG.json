@@ -1,0 +1,18 @@
+{
+  "audit_version": "V3",
+  "authority_checkpoint": "LOCK_CROWN_REPAIR_CHECKPOINT_059",
+  "mode": "CANONICAL_V3_REPAIR",
+  "fail_closed": true,
+  "b02_c02_locked": true,
+  "word_count_rules": {
+    "min_prose_words": 4200,
+    "max_prose_words": 5200,
+    "count_method": "whitespace_delimited_excluding_headings"
+  },
+  "diction_rules": {
+    "banned_words_count": 16,
+    "enforcement": "STRICT_FAIL_CLOSED"
+  },
+  "inspectors_count": 10,
+  "inspector_general_independent": true
+}

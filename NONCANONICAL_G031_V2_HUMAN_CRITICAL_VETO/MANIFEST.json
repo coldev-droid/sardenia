@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-08-23T02:43:51.665Z",
+  "bundle_name": "B02_C01_PHYSICAL_AUDIT_BUNDLE_V2",
+  "files": {
+    "AUDIT_CONFIG.json": {
+      "size": 237,
+      "sha256": "b83d1db9ace60c4759838f6fcf7f563136a4c40420e1b41c03194b49c7340de6"
+    },
+    "AUDIT_CONFIG.txt": {
+      "size": 36,
+      "sha256": "51dcfd8fb54c0156a0b223997ad64dbb66bdcbd0e9dab5b49fd715a7e3cdaa23"
+    },
+    "B02_C01.md": {
+      "size": 32315,
+      "sha256": "1386d85166c2652d101b59634942c2a22aa289fb9524d8b6843e9746a0aefb1e"
+    },
+    "B02_C01_CONTRACT.md": {
+      "size": 1229,
+      "sha256": "7028ebac68d485dfdccdfe9e0fb0f7ea92c996af616bea5de558e149f0ee2587"
+    },
+    "CUSTODY_LEDGER.json": {
+      "size": 415,
+      "sha256": "a70bc57d8b1b3423c4a7e29efd112762b3883862833050bd4da6470add0e2c0e"
+    },
+    "GENERATION_RECEIPT.json": {
+      "size": 149,
+      "sha256": "ba8fd0dbabcd67bb3c7fb7c89ab9c9ee10e49ec99f8a617a0b537025db0da33e"
+    },
+    "GIT_PROVENANCE.json": {
+      "size": 276,
+      "sha256": "06df28f7e9535aae7ddf4566f648437a878b6dbd8fc8a99db45c93b41de07e1f"
+    },
+    "GIT_PROVENANCE.txt": {
+      "size": 553,
+      "sha256": "cc6a0369475f2046e0186a72323659942fd5bd2ba4aec260acc69c5ea4bf7af5"
+    },
+    "INSPECTOR_1.json": {
+      "size": 1877,
+      "sha256": "aee8794bbc9db9397d8455406f717f009b44f6bdccde236086900491247b74a8"
+    },
+    "INSPECTOR_10.json": {
+      "size": 1878,
+      "sha256": "78ab87e60433a1b795e4baf746f1515e916f2a91d36a2147090dc42397d288a9"
+    },
+    "INSPECTOR_2.json": {
+      "size": 1877,
+      "sha256": "3e584638057dccb3c118bf81c94ff49a4d4a39edb26e6416262260c063374299"
+    },
+    "INSPECTOR_3.json": {
+      "size": 1877,
+      "sha256": "b9804312fb6abe52377a0ff4398645ea56612f592b51e06a24bb5108c551ed53"
+    },
+    "INSPECTOR_4.json": {
+      "size": 1877,
+      "sha256": "36e443b72b93bd64b75bc652e54157fe6e26673daabb300f98cacca8fbfaac06"
+    },
+    "INSPECTOR_5.json": {
+      "size": 1877,
+      "sha256": "6dd4fccb9b04238e196c2ae233452bbb8031715737ce22afc4c32ef3f0481db5"
+    },
+    "INSPECTOR_6.json": {
+      "size": 1877,
+      "sha256": "74ee16c3f67e4da8dfe2465647bdf85c63f5ecc1e107c9822d1326530a3c5f87"
+    },
+    "INSPECTOR_7.json": {
+      "size": 1877,
+      "sha256": "4557bee2fa64e6c04c8f3826d666d8d6163c1821960efe11e4c9ef580d4a13b5"
+    },
+    "INSPECTOR_8.json": {
+      "size": 1877,
+      "sha256": "84648bc0141c5a785e0e478961ab955dea65c1c03787170d275ad328cec430d6"
+    },
+    "INSPECTOR_9.json": {
+      "size": 1877,
+      "sha256": "932f5b9f921e76af6f870b37539697ad526b0cbbcb1a5e250e250b308ae28258"
+    },
+    "INSPECTOR_GENERAL_REPORT.json": {
+      "size": 801,
+      "sha256": "046c4ed7495ad336a0a25f200ee42317da7e468070dc58d4152b9a14ce751537"
+    },
+    "ROUTE_LEDGER.json": {
+      "size": 404,
+      "sha256": "0496b3b14ad5009724f85c3a1de7ec4eff1ce4ddac6e8178f9e24abd692736de"
+    },
+    "SOURCE_LEDGER.json": {
+      "size": 190,
+      "sha256": "44e973201476753b667bd93db2759cd3b62872b5d7f78871a6146b68cc6d62fb"
+    }
+  }
+}

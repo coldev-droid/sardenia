@@ -1,0 +1,39 @@
+{
+  "inspector_identity": "INSPECTOR_5",
+  "authority": "LOCK_CROWN_REPAIR_CHECKPOINT_059",
+  "input_hashes": {
+    "manuscript": "1386d85166c2652d101b59634942c2a22aa289fb9524d8b6843e9746a0aefb1e",
+    "contract": "7028ebac68d485dfdccdfe9e0fb0f7ea92c996af616bea5de558e149f0ee2587"
+  },
+  "evaluated_rules": [
+    "No safehouse, must be licensed Oristano guesthouse.",
+    "No invented southern extraction.",
+    "Eye in municipal receiving room.",
+    "Eye has two closed doors, bolted support table, grey crate, blue corner seal, three numbered family locks.",
+    "Keys in separate locked cases.",
+    "Plant-fibre cluster outside historical wrapping beneath transparent cover.",
+    "No Cagliari result.",
+    "Katia injured but active.",
+    "Mia and Tina ordinary dogs under named care.",
+    "Retrieval branch: Maris, Inga, André.",
+    "Maris calculates money and risk limits.",
+    "André gains no custody authority.",
+    "Sentina untouched in Alghero."
+  ],
+  "quoted_paragraph_evidence": [
+    "The property was a standard, legally secured rental...",
+    "The artifact rests inside the grey crate, which is centered on the bolted support table...",
+    "The outer seal on the room is a numbered blue corner seal...",
+    "My key is in the separate locked case...",
+    "The plant-fibre cluster... resting outside the historical wrapping, trapped beneath the transparent secondary cover...",
+    "We did not dispatch a sample to Cagliari...",
+    "Maris... currently running a complex, agonizingly detailed series of calculations regarding the retrieval of the Sentina..."
+  ],
+  "findings": "All required facts are accurately represented without meta-fiction or drift language. Constraints have been met.",
+  "timestamps": {
+    "started": "2026-08-23T00:33:13.264Z",
+    "completed": "2026-08-23T00:33:13.264Z"
+  },
+  "error_state": "NONE",
+  "verdict": "PASS"
+}

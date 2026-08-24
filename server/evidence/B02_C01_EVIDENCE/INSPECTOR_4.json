@@ -1,0 +1,60 @@
+{
+  "inspector_id": "INSP-04-CONSEQUENCE",
+  "file_code": "I04_CHARACTER_CONSEQUENCE",
+  "inspector_name": "Character Consequence & Injury Reality Inspector",
+  "category_group": "Story Tension & Adventure",
+  "specialty": "Physical Injury Persistence, Human Limitation & Canine Authenticity",
+  "badge_icon": "Activity",
+  "badge_color": "rose",
+  "start_time": "2026-08-23T04:40:01.920Z",
+  "end_time": "2026-08-23T04:40:02.160Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to enforce somatic realism and character continuity. Rejects instantaneous injury healing, heroic indifference to pain, and Hollywood anthropomorphic animal tropes.",
+    "review_methodology": "1. Audit Katia's physical state: sprained foot/ankle must be bandaged in linen, elevated, painful upon bearing weight, requiring rest and herbal treatment. 2. Verify Katia maintains active leadership and authority despite physical limitation. 3. Audit hound behavior: Mia and Tina must behave as realistic hunting hounds under Geronimo's named care (sniffing cupboards, resting on rugs, needing dry towels).",
+    "drift_detection_heuristics": [
+      "Detect Katia walking briskly, running, or standing without support.",
+      "Detect supernatural canine telepathy or tactical sentry behaviors.",
+      "Ensure injuries from previous encounters leave physical and logistical consequences."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Miraculous Healing Trope",
+      "failure_signature": "Injured characters performing vigorous physical actions without impairment.",
+      "audit_result": "PASS - Katia is confined to armchair with propped, linen-wrapped foot and requires a stick."
+    },
+    {
+      "pattern_name": "Tactical Canine Invention",
+      "failure_signature": "Dogs executing perimeter patrols or understanding human dialogue.",
+      "audit_result": "PASS - Mia and Tina behave strictly as domestic hounds (licking boots, sleeping near hearth)."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-CONSEQ-01",
+    "RULE-CONSEQ-02",
+    "RULE-CONSEQ-03"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-CONSEQ-01",
+      "paragraph_locator": "Paragraph 13-18",
+      "exact_verbatim_quote": "Her left foot and ankle were heavily wrapped in clean white linen, propped carefully atop a low wooden stool cushioned with a folded coat. The sprain from their scramble down the rocky embankment three days prior still throbbed with a dull, persistent ache if she bore weight upon it... \"The tea from the herbalist has eased the swelling, but the tendon will need another week of quiet rest before I can walk without a stick.\"",
+      "analysis": "Katia's injury has direct somatic grounding and limits her mobility while preserving her strategic leadership."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Mobility violation test",
+      "method": "Search for 'Katia.*(stood up|paced|walked quickly|ran|jumped)'",
+      "outcome": "0 mobility violations. Katia remains seated with elevated injured foot."
+    }
+  ],
+  "findings": "Physical consequences and canine realism are strictly upheld throughout the prose.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "bcc8e24c0704fc4081f930dc4edf9fe14990e8f4395a710bafe6287044d3a698",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

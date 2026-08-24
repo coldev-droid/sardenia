@@ -1,0 +1,141 @@
+{
+  "transaction_id": "QR-20260823-G031-V2-CRITICAL-VETO-001",
+  "timestamp": "2026-08-23T03:32:00Z",
+  "reason": "HUMAN_AUDIT_CRITICAL_VETO",
+  "veto_findings": [
+    "Veerle key placement violation (sub-dermal lanyard instead of separate locked case)",
+    "Blue corner seal improperly described as municipal door tag",
+    "G031 consumed G032 train transit beyond Oristano departure",
+    "Unauthorized future custody drift planted",
+    "Forbidden corporate/militarized/cybernetic diction present",
+    "Inspectors lacked true independence and contained identical templates",
+    "Git provenance contained untracked files without clean Checkpoint 059 ancestry proof",
+    "Source ledger lacked URL/publisher/claim mappings"
+  ],
+  "quarantined_bundle": {
+    "zip_filename": "B02_C01_PHYSICAL_AUDIT_BUNDLE_V2.zip",
+    "zip_bytes": 30780,
+    "zip_sha256": "ce036aa4c9894a9bd7742c8aa6a5dd2f78b191df72a9b27d7be45c58b1118210",
+    "chapter_sha256": "1386d85166c2652d101b59634942c2a22aa289fb9524d8b6843e9746a0aefb1e",
+    "contract_sha256": "7028ebac68d485dfdccdfe9e0fb0f7ea92c996af616bea5de558e149f0ee2587"
+  },
+  "quarantine_directory": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/",
+  "total_files_quarantined": 23,
+  "files": {
+    "AUDIT_CONFIG.json": {
+      "size": 237,
+      "sha256": "b83d1db9ace60c4759838f6fcf7f563136a4c40420e1b41c03194b49c7340de6",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/AUDIT_CONFIG.json"
+    },
+    "AUDIT_CONFIG.txt": {
+      "size": 36,
+      "sha256": "51dcfd8fb54c0156a0b223997ad64dbb66bdcbd0e9dab5b49fd715a7e3cdaa23",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/AUDIT_CONFIG.txt"
+    },
+    "B02_C01.md": {
+      "size": 32315,
+      "sha256": "1386d85166c2652d101b59634942c2a22aa289fb9524d8b6843e9746a0aefb1e",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/B02_C01.md"
+    },
+    "B02_C01_CONTRACT.md": {
+      "size": 1229,
+      "sha256": "7028ebac68d485dfdccdfe9e0fb0f7ea92c996af616bea5de558e149f0ee2587",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/B02_C01_CONTRACT.md"
+    },
+    "CUSTODY_LEDGER.json": {
+      "size": 415,
+      "sha256": "a70bc57d8b1b3423c4a7e29efd112762b3883862833050bd4da6470add0e2c0e",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/CUSTODY_LEDGER.json"
+    },
+    "GENERATION_RECEIPT.json": {
+      "size": 149,
+      "sha256": "ba8fd0dbabcd67bb3c7fb7c89ab9c9ee10e49ec99f8a617a0b537025db0da33e",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/GENERATION_RECEIPT.json"
+    },
+    "GIT_PROVENANCE.json": {
+      "size": 276,
+      "sha256": "06df28f7e9535aae7ddf4566f648437a878b6dbd8fc8a99db45c93b41de07e1f",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/GIT_PROVENANCE.json"
+    },
+    "GIT_PROVENANCE.txt": {
+      "size": 553,
+      "sha256": "cc6a0369475f2046e0186a72323659942fd5bd2ba4aec260acc69c5ea4bf7af5",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/GIT_PROVENANCE.txt"
+    },
+    "INSPECTOR_1.json": {
+      "size": 1877,
+      "sha256": "aee8794bbc9db9397d8455406f717f009b44f6bdccde236086900491247b74a8",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_1.json"
+    },
+    "INSPECTOR_10.json": {
+      "size": 1878,
+      "sha256": "78ab87e60433a1b795e4baf746f1515e916f2a91d36a2147090dc42397d288a9",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_10.json"
+    },
+    "INSPECTOR_2.json": {
+      "size": 1877,
+      "sha256": "3e584638057dccb3c118bf81c94ff49a4d4a39edb26e6416262260c063374299",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_2.json"
+    },
+    "INSPECTOR_3.json": {
+      "size": 1877,
+      "sha256": "b9804312fb6abe52377a0ff4398645ea56612f592b51e06a24bb5108c551ed53",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_3.json"
+    },
+    "INSPECTOR_4.json": {
+      "size": 1877,
+      "sha256": "36e443b72b93bd64b75bc652e54157fe6e26673daabb300f98cacca8fbfaac06",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_4.json"
+    },
+    "INSPECTOR_5.json": {
+      "size": 1877,
+      "sha256": "6dd4fccb9b04238e196c2ae233452bbb8031715737ce22afc4c32ef3f0481db5",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_5.json"
+    },
+    "INSPECTOR_6.json": {
+      "size": 1877,
+      "sha256": "74ee16c3f67e4da8dfe2465647bdf85c63f5ecc1e107c9822d1326530a3c5f87",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_6.json"
+    },
+    "INSPECTOR_7.json": {
+      "size": 1877,
+      "sha256": "4557bee2fa64e6c04c8f3826d666d8d6163c1821960efe11e4c9ef580d4a13b5",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_7.json"
+    },
+    "INSPECTOR_8.json": {
+      "size": 1877,
+      "sha256": "84648bc0141c5a785e0e478961ab955dea65c1c03787170d275ad328cec430d6",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_8.json"
+    },
+    "INSPECTOR_9.json": {
+      "size": 1877,
+      "sha256": "932f5b9f921e76af6f870b37539697ad526b0cbbcb1a5e250e250b308ae28258",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_9.json"
+    },
+    "INSPECTOR_GENERAL_REPORT.json": {
+      "size": 801,
+      "sha256": "046c4ed7495ad336a0a25f200ee42317da7e468070dc58d4152b9a14ce751537",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/INSPECTOR_GENERAL_REPORT.json"
+    },
+    "MANIFEST.json": {
+      "size": 2995,
+      "sha256": "fe1baef360622f280d7da647441ec2c3b18719975b79b18f97f782aac5e3966a",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/MANIFEST.json"
+    },
+    "MANIFEST.sha256": {
+      "size": 1773,
+      "sha256": "954ececfcd12a093a0d2dcdc24e42efdb999afe070fbf1043e922385314ca363",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/MANIFEST.sha256"
+    },
+    "ROUTE_LEDGER.json": {
+      "size": 404,
+      "sha256": "0496b3b14ad5009724f85c3a1de7ec4eff1ce4ddac6e8178f9e24abd692736de",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/ROUTE_LEDGER.json"
+    },
+    "SOURCE_LEDGER.json": {
+      "size": 190,
+      "sha256": "44e973201476753b667bd93db2759cd3b62872b5d7f78871a6146b68cc6d62fb",
+      "quarantine_path": "NONCANONICAL_G031_V2_HUMAN_CRITICAL_VETO/SOURCE_LEDGER.json"
+    }
+  }
+}

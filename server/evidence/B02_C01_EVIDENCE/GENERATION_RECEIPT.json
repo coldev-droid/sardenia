@@ -1,0 +1,15 @@
+{
+  "unit": "B02_C01/G031",
+  "version": "V3",
+  "timestamp": "2026-08-23T04:12:00Z",
+  "authority": "LOCK_CROWN_REPAIR_CHECKPOINT_059",
+  "chapter_file": "B02_C01.md",
+  "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+  "chapter_bytes": 25111,
+  "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea",
+  "contract_bytes": 2066,
+  "direct_prose_words": 4234,
+  "prose_paragraphs": 217,
+  "target_word_range": "4200-5200",
+  "status": "VERIFIED_CANONICAL_V3"
+}

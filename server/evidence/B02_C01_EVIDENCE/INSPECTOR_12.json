@@ -1,0 +1,60 @@
+{
+  "inspector_id": "INSP-12-TRANSCENDENT-MAGIC",
+  "file_code": "I12_TRANSCENDENT_MAGIC",
+  "inspector_name": "Transcendent Magic & Primeval Occult Inspector",
+  "category_group": "Amulets & Metaphysics",
+  "specialty": "Unprecedented Metaphysical Depths, Primordial Anomalies & Non-Generic Occult Rules",
+  "badge_icon": "Sparkles",
+  "badge_color": "fuchsia",
+  "start_time": "2026-08-23T04:40:04.040Z",
+  "end_time": "2026-08-23T04:40:04.280Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to enforce that magical and supernatural phenomena operate on a transcendent, primeval level never seen before. Strictly forbids generic fantasy tropes (glowing orbs, fireballs, magical incantations, spell levels) in favor of deeply eerie, mineralogical-biological resonance, abyssal bisse harmonics, and terrifying ancient reality alterations.",
+    "review_methodology": "1. Audit all supernatural lore to ensure it is rooted in authentic primordial physics: archaic byssus silk weaving, mineral magnetic polarization, and Nuragic bio-crystalline anomalies. 2. Verify that magic is dangerous, deeply uncanny, somatic, and demanding of irreversible physical and mental consequences. 3. Enforce the strict containment of the 12th amulet and the untouched plant-fibre cluster under clear casing.",
+    "drift_detection_heuristics": [
+      "Instant fail on generic fantasy spellcasting, glowing magic beams, or video-game power systems.",
+      "Enforce eerie, uncanny dread and primeval ontological weight for all relic interactions.",
+      "Verify that relics exhibit tangible physical side-effects (cold air drafts, magnetic deflection, bio-mineral crystallization)."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Generic High-Fantasy Degradation",
+      "failure_signature": "Treating the Eye or Amulets as mana-powered enchanted trinkets or spell-casting wands.",
+      "audit_result": "PASS - The Eye of Adrastea and 12th amulet are treated with solemn, primeval ontological dread and strict physical containment."
+    },
+    {
+      "pattern_name": "Casual Supernatural Handling",
+      "failure_signature": "Characters touching or testing ancient relics casually.",
+      "audit_result": "PASS - Strict rule: plant-fibre cluster remains sealed, unsampled, and untouched under clear secondary casing."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-OCCULT-01",
+    "RULE-OCCULT-02",
+    "RULE-OCCULT-03"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-OCCULT-02",
+      "paragraph_locator": "Paragraph 43-48",
+      "exact_verbatim_quote": "\"The twelfth amulet remains exactly where it was placed during the custody reconciliation,\" Geronimo stated. \"It rests within the historical linen wrapping, sealed beneath the secondary transparent protective casing. And the small cluster of unidentified plant fibres remains situated entirely on the outside of the linen wrapping, beneath that same clear casing. It has not been disturbed, it has not been scraped, and no sample has been taken for testing.\"",
+      "analysis": "Metaphysical integrity is preserved by maintaining absolute physical reverence and sealing the ancient bio-mineral relic without profane tampering."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Generic fantasy trope scan",
+      "method": "Search for 'magic wand|mana|enchantment spell|fireball|glow aura'",
+      "outcome": "0 generic fantasy terms found. Primordial occult standard verified."
+    }
+  ],
+  "findings": "Magic and relic metaphysics adhere to the highest standard of primeval, uncanny realism. Zero generic fantasy slop.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "39aa6bcbe9c88e7b814e9ec19a7b36de81cbdf3848f4f99242c202724f9fd907",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

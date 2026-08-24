@@ -1,0 +1,21 @@
+{
+  "inspector_id": "INSP-05",
+  "inspector_name": "Source Verification & Evidence Ledger Inspector",
+  "specialty": "Source History",
+  "start_time": "2026-08-23T04:15:08.100Z",
+  "end_time": "2026-08-23T04:15:09.300Z",
+  "audit_doctrine": "Verifies civil deposit citations and historical continuity.",
+  "owned_rules": [
+    "RULE-SRC-01",
+    "RULE-SRC-02"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "findings": "All 2 specialized evaluation criteria verified with 100% compliance. No canon drift or banned diction detected.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "cf73d86b36c398077d9cd3ae0e850aef077ec801b22628df22087308db96e219",
+  "normalized_sha256": "7c3381a572b6b95e6638ea5ede07a559693a4cf396f51cd72d90f850fb16e174"
+}

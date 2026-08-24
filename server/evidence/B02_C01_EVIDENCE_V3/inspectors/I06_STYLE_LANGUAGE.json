@@ -1,0 +1,21 @@
+{
+  "inspector_id": "INSP-06",
+  "inspector_name": "Style, Tone & Diction Gate Inspector",
+  "specialty": "Style & Diction Gate",
+  "start_time": "2026-08-23T04:15:10.100Z",
+  "end_time": "2026-08-23T04:15:11.300Z",
+  "audit_doctrine": "Audits text for zero corporate, cybernetic, militarized, or meta language.",
+  "owned_rules": [
+    "RULE-STYLE-01",
+    "RULE-STYLE-02"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "findings": "All 2 specialized evaluation criteria verified with 100% compliance. No canon drift or banned diction detected.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "16c09382e8eb6e07eabfc76891601e3656e4d7bd635dfe3c6aec93dc0d8637c5",
+  "normalized_sha256": "77b7563b415ed153851a3f95ee5ab5041371b47385b1d57258e4b9d571d1bdca"
+}

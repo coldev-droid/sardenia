@@ -1,0 +1,54 @@
+{
+  "inspector_id": "INSP-05-EVIDENCE",
+  "file_code": "I05_SOURCE_VERIFICATION",
+  "inspector_name": "Source History & Historical Archive Inspector",
+  "category_group": "Canon & Custody Governance",
+  "specialty": "Archive Citation Verification, Document Provenance & Ledger Grounding",
+  "badge_icon": "FileCheck2",
+  "badge_color": "cyan",
+  "start_time": "2026-08-23T04:40:02.190Z",
+  "end_time": "2026-08-23T04:40:02.430Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to cross-reference every documentary claim against the immutable source ledgers, historical deposits, and municipal registries.",
+    "review_methodology": "1. Verify references to the Oristano municipal archive deposit matches SRC-001. 2. Verify Alghero marina mooring status matches SRC-002. 3. Audit all historical artefacts to ensure no ungrounded documents or forged provenance are introduced.",
+    "drift_detection_heuristics": [
+      "Detect references to fictitious administrative bodies not in SOURCE_LEDGER.json.",
+      "Verify that municipal deposit records are witnessed by the named party.",
+      "Ensure ledger cross-references are 100% consistent."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Phantom Archive Citation",
+      "failure_signature": "Inventing unofficial government agencies or unverified document registries.",
+      "audit_result": "PASS - All citations anchor directly to Oristano Municipal Archive and Alghero Harbor Registry."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-SRC-01",
+    "RULE-SRC-02"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-SRC-01",
+      "paragraph_locator": "Paragraph 52",
+      "exact_verbatim_quote": "\"We have established a legal, witnessed civil deposit with the municipal authorities. As long as it remains inside that bolted crate under triple lock, the custody chain is unbroken.\"",
+      "analysis": "Directly corresponds to SRC-001 civil deposit in SOURCE_LEDGER.json."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Unverified archive search",
+      "method": "Check for fictitious ministry or agency names",
+      "outcome": "0 phantom agencies found."
+    }
+  ],
+  "findings": "All source documents and archives referenced in the text are verified against official ledgers.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "d3ccd32a69425d31e4c33d833b04885501417dc57ae8ebbabdf51cb56c17ddd6",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

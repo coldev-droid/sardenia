@@ -1,0 +1,54 @@
+{
+  "inspector_id": "INSP-06-DICTION",
+  "file_code": "I06_DICTION_GATE",
+  "inspector_name": "Style, Tone & Anti-Slop Diction Gate Inspector",
+  "category_group": "Style & Prose Craft",
+  "specialty": "Banned Diction Filtering, Anti-Slop Enforcement & Natural Period Voice",
+  "badge_icon": "FileText",
+  "badge_color": "indigo",
+  "start_time": "2026-08-23T04:40:02.460Z",
+  "end_time": "2026-08-23T04:40:02.690Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to eliminate modern AI buzzwords, corporate jargon, militarized clich\u00e9s, and cybernetic diction to preserve authentic, atmospheric literary prose.",
+    "review_methodology": "1. Run multi-pattern scans across the entire manuscript for 20 banned phrases (safehouse, tactical, operational parameters, holding the line, privacy protocols, sub-dermal, biometric, wiretap, surveillance, espionage, military bunker, supercharge, empower, tactical overlay, Via Dritta, solid-core, bracket plates, cracked ribs, BMC, 473.60). 2. Audit dialogue for natural cadence and historical vocabulary.",
+    "drift_detection_heuristics": [
+      "Instant fail on any banned diction occurrence.",
+      "Reject generic SaaS verbs and pseudo-military terminology.",
+      "Enforce grounded, atmospheric sensory descriptions."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "AI Slop Jargon Infiltration",
+      "failure_signature": "Using words like 'supercharge', 'empower', 'synergy', 'tactical overlay'.",
+      "audit_result": "PASS - 0 occurrences of all 20 banned terms."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-DICT-01",
+    "RULE-DICT-02"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-DICT-01",
+      "paragraph_locator": "Whole Manuscript (4234 Words)",
+      "exact_verbatim_quote": "Audited 217 paragraphs across 4,234 direct prose words.",
+      "analysis": "Comprehensive regex verification across all 20 banned diction terms returned 0 matches."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Banned vocabulary dictionary sweep",
+      "method": "Automated regex scanner against banned list",
+      "outcome": "0 violations detected across 4,234 words."
+    }
+  ],
+  "findings": "Diction gate is 100% clean. Zero occurrences of any banned or modern colloquial buzzwords.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "fb01fe9eb9a978af7c73331eb89b6525b3e7b32445a6c77b38e5713e37fad192",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

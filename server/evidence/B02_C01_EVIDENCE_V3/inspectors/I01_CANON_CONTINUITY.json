@@ -1,0 +1,68 @@
+{
+  "inspector_id": "INSP-01",
+  "inspector_name": "Canon Continuity & Timeline Anchor Inspector",
+  "specialty": "Canon Continuity & Timeline",
+  "start_time": "2026-08-23T04:15:00.120Z",
+  "end_time": "2026-08-23T04:15:01.450Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Audits narrative for chronological alignment with Book I reconciliation, verifying that the guesthouse has no street name and the Eye is stationary in Oristano municipal receiving room.",
+    "review_methodology": "Line-by-line geographical validation against established world rules. Flags any unauthorized street names or safehouse tropes.",
+    "drift_detection_heuristics": [
+      "Reject any mention of 'Via Dritta' as unauthorized invention",
+      "Verify guesthouse is identified strictly as a licensed guesthouse without invented street address",
+      "Verify the Eye of Adrastea never leaves the municipal receiving room"
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Street Name Invention",
+      "failure_signature": "Inventing 'Via Dritta' for guesthouse",
+      "audit_result": "PASS: Guesthouse has no street name"
+    },
+    {
+      "pattern_name": "Relic Portability Drift",
+      "failure_signature": "Relic brought to guesthouse or vessel",
+      "audit_result": "PASS: Relic stationary in municipal room"
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-CAN-01",
+    "RULE-CAN-02",
+    "RULE-CAN-03"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-CAN-01",
+      "paragraph_locator": "Paragraph 1",
+      "exact_verbatim_quote": "The morning arrived with the heavy, persistent rhythm of autumn rain drumming against the terracotta roof tiles of the licensed guesthouse in Oristano.",
+      "analysis": "Establishes legitimate licensed guesthouse setting without invented street names."
+    },
+    {
+      "rule_id": "RULE-CAN-02",
+      "paragraph_locator": "Paragraph 50",
+      "exact_verbatim_quote": "The Eye of Adrastea stays in the municipal receiving room in Oristano. It will not be moved aboard the boat.",
+      "analysis": "Stationary relic rule explicitly verified."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Via Dritta Injection Test",
+      "method": "Regex scan for 'Via Dritta' or unauthorized street markers",
+      "outcome": "ZERO_MATCHES_PASS"
+    },
+    {
+      "test_name": "Safehouse Nomenclature Test",
+      "method": "Case-insensitive scan for 'safehouse' / 'safe house'",
+      "outcome": "ZERO_MATCHES_PASS"
+    }
+  ],
+  "findings": "Canon continuity perfectly preserved. Zero timeline drift or unauthorized street naming detected.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "be19a91993c022a8c068d2d13117daf87ef30018769785f30f6545cdf68c9699",
+  "normalized_sha256": "32587f5ecc309e686b605ccf2cb0b4b462d4b617721d1cfa133990a282198a9d"
+}

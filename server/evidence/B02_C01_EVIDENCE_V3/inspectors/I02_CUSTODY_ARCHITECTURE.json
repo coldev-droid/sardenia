@@ -1,0 +1,68 @@
+{
+  "inspector_id": "INSP-02",
+  "inspector_name": "Custody Architecture & Multi-Key Isolation Inspector",
+  "specialty": "Custody Architecture & Multi-Key Security",
+  "start_time": "2026-08-23T04:15:02.100Z",
+  "end_time": "2026-08-23T04:15:03.380Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Audits physical containment: two closed doors, bolted support table, grey crate, blue tamper-evident corner seal on lid seam, 3 padlocks in separate locked cases.",
+    "review_methodology": "Validates physical containment against strict custody rules: no solid-core doors, no bracket plates, no loose keys.",
+    "drift_detection_heuristics": [
+      "Check that two closed doors exist between public corridor and room without 'solid-core' exaggeration",
+      "Check blue seal is tamper-evident corner seal across crate lid seam (not municipal door tag)",
+      "Verify 3 keys are isolated in locked cases (trunk, satchel, pack) with zero lanyards or pockets"
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Door Construction Drift",
+      "failure_signature": "Adding 'solid-core' or reinforced steel door claims",
+      "audit_result": "PASS: Exact two closed doors established"
+    },
+    {
+      "pattern_name": "Key Custody Laxity",
+      "failure_signature": "Key carried on lanyard, loose in pocket, or biometric",
+      "audit_result": "PASS: 3 separate locked cases verified"
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-CUST-01",
+    "RULE-CUST-02",
+    "RULE-CUST-03"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-CUST-01",
+      "paragraph_locator": "Paragraph 28",
+      "exact_verbatim_quote": "Two closed doors stand between the inner room and the public corridor.",
+      "analysis": "Confirms two closed doors without exaggerated solid-core specs."
+    },
+    {
+      "rule_id": "RULE-CUST-02",
+      "paragraph_locator": "Paragraph 30",
+      "exact_verbatim_quote": "The grey transport crate rests securely on the table surface, with the blue tamper-evident corner seal intact across the lid seam",
+      "analysis": "Correct seal placement across crate lid seam verified."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Lanyard/Sub-dermal Key Test",
+      "method": "Keyword search for neck cords, lanyards, or body-worn keys",
+      "outcome": "ZERO_MATCHES_PASS"
+    },
+    {
+      "test_name": "Hardware Invention Test",
+      "method": "Scan for bracket plates, steel strongbox, brass cases",
+      "outcome": "CLEAN_PASS"
+    }
+  ],
+  "findings": "Physical custody architecture and multi-key separation adhere 100% to verified canon.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "70540cb08a64c33b98f9ba482123ea82958afe15d89247fdc409110d2b7dad39",
+  "normalized_sha256": "2df1b5efada470099069564a121d3b90d3a01392b522a0bd47bfb8c969e283cd"
+}

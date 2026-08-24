@@ -1,0 +1,95 @@
+{
+  "authority": "LOCK_CROWN_REPAIR_CHECKPOINT_059",
+  "audit_version": "V3",
+  "total_payload_files": 22,
+  "files": {
+    "AUDIT_CONFIGURATION.json": {
+      "size": 463,
+      "sha256": "84c93f499d012db111bdc170f1639624500dea5c3f895d787e1a11aa4dc2e811"
+    },
+    "AUTHORITY_MATERIALIZATION.json": {
+      "size": 741,
+      "sha256": "3d2c41898c17863d718dc6e2e281cb3c464772b8dcc9646ebbe45ab872a9766e"
+    },
+    "B02_C01.md": {
+      "size": 25111,
+      "sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1"
+    },
+    "B02_C01_CONTRACT.md": {
+      "size": 2066,
+      "sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+    },
+    "CUSTODY_LEDGER.json": {
+      "size": 2405,
+      "sha256": "453c32fd21a9f2d2adb21cc5f2f3699a3aac3210c4038c00bee1ce153fc03e74"
+    },
+    "GENERATION_RECEIPT.json": {
+      "size": 528,
+      "sha256": "d842df3b2bfcf1c25b9c0307c95b7b25c94b0da6919475fdc8a17e517ca8d893"
+    },
+    "GIT_PROVENANCE.json": {
+      "size": 459,
+      "sha256": "139bdeb19a4f0c2afc889e1e63ec2dfe004356b8a87db432b80f60d0f94592e0"
+    },
+    "GIT_PROVENANCE.txt": {
+      "size": 380,
+      "sha256": "eb528212248c6234ce93109b8a02b7227498320f93670a9961c0dc32c1b5072a"
+    },
+    "INSPECTOR_GENERAL_REPORT.json": {
+      "size": 660,
+      "sha256": "4f47b777f3360895fd712805c391abf8ebaa2fc359ebd646040c8f455d4e63be"
+    },
+    "QUARANTINE_RECEIPT_V2.json": {
+      "size": 496,
+      "sha256": "66e411b72692ce0c827a4c9b5d0356afa1c46bcdf91add2e8ef414fc41ac7519"
+    },
+    "ROUTE_LEDGER.json": {
+      "size": 600,
+      "sha256": "6ef7b26173e3e77d01def20592ec6b99e492ef120e8ada5cbc8e40c938b1afa7"
+    },
+    "SOURCE_LEDGER.json": {
+      "size": 666,
+      "sha256": "1efef83a12740fdb141182818cd8f118b70dcee4f8ecd3cd55e2eb6cfffd19f8"
+    },
+    "inspectors/I01_CANON_CONTINUITY.json": {
+      "size": 3068,
+      "sha256": "71cb12ca99ce098bb0068506f4be53c230420afd81c3aa7972a9ca9cf4395990"
+    },
+    "inspectors/I02_CUSTODY_ARCHITECTURE.json": {
+      "size": 3068,
+      "sha256": "bfda661437057940c4203d63b14ecec8fb06743ed76d423555cf00b819bc932c"
+    },
+    "inspectors/I03_SPATIAL_BOUNDARY.json": {
+      "size": 2850,
+      "sha256": "df5bac392e37317cba754ff1113ded6dcbfdcf240543fc074c55d9b663180f3d"
+    },
+    "inspectors/I04_CHARACTER_CONSEQUENCE.json": {
+      "size": 3075,
+      "sha256": "77501582ed21e7da09769d8de8c7acf6de1feed8d31290ac6ba192e420e87c33"
+    },
+    "inspectors/I05_SOURCE_VERIFICATION.json": {
+      "size": 2999,
+      "sha256": "16953860d149a2d79f4bd1c894ebf2296e09ffd947bcdbc8a27da87978bdae10"
+    },
+    "inspectors/I06_DICTION_GATE.json": {
+      "size": 2944,
+      "sha256": "aeb2fb4b7c154d8c416b8f4ad7568db2509391071ed4d1a400276bd368ca3c61"
+    },
+    "inspectors/I07_NARRATIVE_FLOW.json": {
+      "size": 2277,
+      "sha256": "33738a92e18289458d794fc275df822505979dc2546611671ab4866f6016e679"
+    },
+    "inspectors/I08_LOGISTICS.json": {
+      "size": 2945,
+      "sha256": "a1b67c88f65454b5d68c614382f6b63873a8f4a6691b2a7b50792b0bc188ab5a"
+    },
+    "inspectors/I09_ENDING_BOUNDARY.json": {
+      "size": 2454,
+      "sha256": "a94dec39f5f0856be6ece989585d4bc2cd65924a282c747a997547c2858daa6e"
+    },
+    "inspectors/I10_ADVERSARIAL_INTEGRITY.json": {
+      "size": 2790,
+      "sha256": "0d659241354a03de5face7cabd376a2d1788d34cd59baae20768159715bc1ac4"
+    }
+  }
+}

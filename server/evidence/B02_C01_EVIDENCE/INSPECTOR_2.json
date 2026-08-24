@@ -1,0 +1,69 @@
+{
+  "inspector_id": "INSP-02-CUSTODY",
+  "file_code": "I02_CUSTODY_ARCHITECTURE",
+  "inspector_name": "Custody Architecture & Multi-Key Isolation Inspector",
+  "category_group": "Canon & Custody Governance",
+  "specialty": "Physical Custody Chain, Receiving Room Security & Key Storage Governance",
+  "badge_icon": "KeyRound",
+  "badge_color": "blue",
+  "start_time": "2026-08-23T04:40:01.350Z",
+  "end_time": "2026-08-23T04:40:01.620Z",
+  "audit_doctrine_and_training": {
+    "doctrine_summary": "Trained to enforce cryptographic, mechanical, and procedural custody specifications. Rejects all single-point-of-failure key storage, unauthorized handling, loose keys, and biometric/cybernetic tropes.",
+    "review_methodology": "1. Audit the physical security of the municipal receiving room (two closed doors, heavy support table bolted to masonry floor). 2. Verify crate integrity (grey transport crate, blue tamper-evident corner seal across lid seam, three numbered family padlocks). 3. Audit all three key storage configurations individually (Geronimo: locked steel strongbox; Katia: locked heavy metal document box; Veerle: locked hinged brass case). 4. Audit relic and fibre status (12th amulet inside historical linen wrapping under secondary clear casing; plant fibre cluster on outside of linen wrapping under clear casing, unsampled and untouched).",
+    "drift_detection_heuristics": [
+      "Disallow single characters carrying multiple family keys.",
+      "Disallow any character carrying loose keys in pockets or on neck lanyards.",
+      "Enforce that the blue tamper seal is situated on the crate lid seam, not on municipal doors.",
+      "Strictly prohibit any Cagliari laboratory sampling or chemical processing."
+    ]
+  },
+  "drift_detection_patterns": [
+    {
+      "pattern_name": "Loose Key Handling Drift",
+      "failure_signature": "Keys placed loose in trouser pockets, on key rings, or worn around necks.",
+      "audit_result": "PASS - Zero loose keys. All three keys are stored within locked cases inside separate travel baggage."
+    },
+    {
+      "pattern_name": "Seal Placement Confusion",
+      "failure_signature": "Describing the blue seal as a municipal door wax seal or customs ribbon.",
+      "audit_result": "PASS - Verified as blue tamper-evident corner seal across the grey crate lid seam."
+    }
+  ],
+  "owned_rule_ids": [
+    "RULE-CUST-01",
+    "RULE-CUST-02",
+    "RULE-CUST-03",
+    "RULE-CUST-04",
+    "RULE-CUST-05"
+  ],
+  "evidence_citations": [
+    {
+      "rule_id": "RULE-CUST-02",
+      "paragraph_locator": "Paragraph 29-30",
+      "exact_verbatim_quote": "\"The heavy support table remains firmly bolted to the masonry floor, exactly as we witnessed yesterday afternoon during the formal deposit.\" \"The grey transport crate rests securely on the table surface, with the blue tamper-evident corner seal intact across the lid seam, showing no peeling or stress marks.\"",
+      "analysis": "Municipal receiving room physical security confirms bolted table, grey crate, and intact blue corner seal."
+    },
+    {
+      "rule_id": "RULE-CUST-03",
+      "paragraph_locator": "Paragraph 34-39",
+      "exact_verbatim_quote": "\"Lock one is secured with my key, lock two with Katia's, and lock three with Veerle's,\" Geronimo remarked. \"None of us carries a loose key on our person.\" ... \"My key is secured within the locked case inside my satchel. Geronimo's key is secured within his locked case inside his trunk, and Veerle's is inside her locked case in her pack.\"",
+      "analysis": "Complete multi-key isolation confirmed across three locked containers without loose keys or biometric shortcuts."
+    }
+  ],
+  "adversarial_test_results": [
+    {
+      "test_name": "Loose key penetration probe",
+      "method": "Search for '(pocket|neck|lanyard|ring|chain).*key'",
+      "outcome": "0 violations. All keys isolated in secondary locked cases."
+    }
+  ],
+  "findings": "Custody architecture is rigorously enforced. The three padlocks, locked secondary cases, stationary crate with blue corner seal, and unsampled fibre cluster pass all audits.",
+  "error_state": null,
+  "verdict": "PASS",
+  "normalized_sha256": "8382ca45497b9332d68febf2cb8cd87e8b0c75143041d9ab786ee525f7eb3a16",
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  }
+}

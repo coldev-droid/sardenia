@@ -1,0 +1,14 @@
+{
+  "checkpoint": "LOCK_CROWN_REPAIR_CHECKPOINT_059",
+  "immutable_parent": "b46846c2edf23e7edff0bf4bf40847101ce5bd07",
+  "status": "MATERIALIZED_CANON_V3",
+  "verified_facts": {
+    "relic_location": "Oristano Municipal Receiving Room",
+    "relic_state": "Bolted support table, grey crate, blue corner seal across lid seam, 3 padlocks",
+    "keys": "Geronimo, Katia, Veerle each have a separate locked case; zero loose/lanyard keys",
+    "katia_injury": "Sprained foot and ankle bound in linen",
+    "andre_role": "Bounded yacht familiarity and deck work only; no keys or custody authority",
+    "dogs": "Mia and Tina under Geronimo's named care",
+    "ending": "Maris, Inga, Andr\u00e9 disappear into Oristano rain at street corner"
+  }
+}

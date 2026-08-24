@@ -1,0 +1,68 @@
+{
+  "authority": "LOCK_CROWN_REPAIR_CHECKPOINT_059",
+  "reconciliation_status": "VERIFIED_CANONICAL_REPAIR_V3",
+  "eye_of_adrastea": {
+    "location": "Oristano Municipal Receiving Room",
+    "status": "SEALED_AND_STATIONARY",
+    "movement_authorized": false,
+    "shipboard_transit_authorized": false
+  },
+  "room_physical_security": {
+    "outer_access": "Two closed doors between public corridor and inner secure room",
+    "mounting": "Heavy support table bolted firmly to masonry floor",
+    "container": "Grey transport crate centered on bolted support table",
+    "seal": {
+      "type": "Tamper-evident blue corner seal across crate lid seam",
+      "status": "INTACT",
+      "location": "Lid seam of grey transport crate",
+      "is_municipal_door_tag": false
+    },
+    "locks": [
+      {
+        "lock_number": 1,
+        "type": "Numbered family padlock",
+        "key_holder": "Geronimo",
+        "key_storage": "Locked case inside his field trunk",
+        "key_loose_or_worn": false,
+        "status": "ENGAGED"
+      },
+      {
+        "lock_number": 2,
+        "type": "Numbered family padlock",
+        "key_holder": "Katia",
+        "key_storage": "Locked case inside her satchel",
+        "key_loose_or_worn": false,
+        "status": "ENGAGED"
+      },
+      {
+        "lock_number": 3,
+        "type": "Numbered family padlock",
+        "key_holder": "Veerle",
+        "key_storage": "Locked case inside her pack",
+        "key_loose_or_worn": false,
+        "status": "ENGAGED"
+      }
+    ]
+  },
+  "relic_configuration": {
+    "total_amulets": 12,
+    "introduced_amulets": 1,
+    "twelfth_amulet_placement": "Inside historical linen wrapping under secondary transparent protective casing",
+    "plant_fibre_cluster": {
+      "location": "Outside historical linen wrapping, beneath secondary transparent protective casing",
+      "status": "UNTOUCHED_UNSAMPLED",
+      "cagliari_analysis": "NONE_PERMITTED_OR_CONDUCTED"
+    }
+  },
+  "sentina_vessel": {
+    "location": "Alghero Marina (outer visitor pontoon)",
+    "status": "UNTOUCHED_AWAITING_WINTER_SLIP_TRANSFER",
+    "custody_role": "Transport vessel only; never receives relic custody"
+  },
+  "andre_custody_status": {
+    "key_possession": false,
+    "deposit_access": false,
+    "custody_authority": false,
+    "role": "Bounded yacht familiarity and deck work only; no restored trust or engine-maintenance authority"
+  }
+}

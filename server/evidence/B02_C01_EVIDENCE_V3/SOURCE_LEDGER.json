@@ -1,0 +1,24 @@
+{
+  "authority": "LOCK_CROWN_REPAIR_CHECKPOINT_059",
+  "archive_sources": [
+    {
+      "source_id": "SRC-001-ORISTANO-MUNICIPAL-ARCHIVE",
+      "description": "Municipal civil deposit register, Oristano",
+      "deposit_date": "1994-10-18",
+      "verified_witnesses": [
+        "Geronimo",
+        "Katia",
+        "Veerle",
+        "Municipal Registrar"
+      ],
+      "status": "VALID_CIVIL_DEPOSIT"
+    },
+    {
+      "source_id": "SRC-002-ALGHERO-HARBOR-REGISTER",
+      "description": "Visitor berth mooring log, Alghero",
+      "vessel": "Sentina (wooden cutter)",
+      "berth_status": "OUTER_PONTOON_AWAITING_TRANSFER",
+      "status": "LOGGED"
+    }
+  ]
+}

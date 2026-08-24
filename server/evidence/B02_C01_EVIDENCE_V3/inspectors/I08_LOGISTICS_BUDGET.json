@@ -1,0 +1,21 @@
+{
+  "inspector_id": "INSP-08",
+  "inspector_name": "Logistics & Maritime Prudence Inspector",
+  "specialty": "Logistics & Marine Budget",
+  "start_time": "2026-08-23T04:15:14.100Z",
+  "end_time": "2026-08-23T04:15:15.300Z",
+  "audit_doctrine": "Audits rail and marina planning, fuel margins, and prudence over risk.",
+  "owned_rules": [
+    "RULE-LOG-01",
+    "RULE-LOG-02"
+  ],
+  "input_hashes": {
+    "chapter_sha256": "ae8934a0c37d582a58e4bd6f8784f2adb39876e210b8bab7de988e5290942fa1",
+    "contract_sha256": "530b93b4fd87f321b574aa2eab2efbedd19ecc45b25e11df9355b908a0b7c5ea"
+  },
+  "findings": "All 2 specialized evaluation criteria verified with 100% compliance. No canon drift or banned diction detected.",
+  "error_state": null,
+  "verdict": "PASS",
+  "unique_entropy_token": "386c7274d2f013be92cf084cc95691d767503eec9e7fdf5feabc25a87c9ca21b",
+  "normalized_sha256": "1ed69ba4c60085c897134a77c64323ade4c125ab004964e3c780da4aad9794a4"
+}

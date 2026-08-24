@@ -1,0 +1,16 @@
+{
+  "Oristano_Branch": {
+    "location": "Licensed Oristano guesthouse",
+    "members": ["Geronimo", "Katia", "Veerle", "Mia", "Tina"],
+    "status": "Holding pattern"
+  },
+  "Retrieval_Branch": {
+    "location": "Departed Oristano for Alghero",
+    "members": ["Maris", "Inga", "André"],
+    "status": "In transit"
+  },
+  "Sentina": {
+    "location": "Alghero",
+    "status": "Moored, untouched"
+  }
+}
