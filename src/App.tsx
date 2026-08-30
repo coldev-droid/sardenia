@@ -29,7 +29,8 @@ import {
   Key,
   Landmark,
   Crown,
-  Mountain
+  Mountain,
+  BookOpen
 } from 'lucide-react';
 import { ZIP_FILENAME, ENDPOINT_URL, EVIDENCE_FILES, type EvidenceFile } from './bundleData';
 import SwarmTrainingCenter from './components/SwarmTrainingCenter';
@@ -38,6 +39,7 @@ import CopyPasteAutomationHub from './components/CopyPasteAutomationHub';
 import CharacterOperationsHub from './components/CharacterOperationsHub';
 import AmuletTracker from './components/AmuletTracker';
 import MythRouteAuditor from './components/MythRouteAuditor';
+import FinalizeBooks from './components/FinalizeBooks';
 import SwarmAntiBoringInspector from './components/SwarmAntiBoringInspector';
 import SardinianFiguresAndLegendsExplorer from './components/SardinianFiguresAndLegendsExplorer';
 import SecretRoutesAndCavesExplorer from './components/SecretRoutesAndCavesExplorer';
@@ -52,7 +54,7 @@ interface DownloadReceipt {
 }
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<'copy-paste' | 'characters' | 'amulets' | 'myths-routes' | 'anti-boring' | 'sardinian-figures' | 'secret-caves' | 'swarm' | 'files' | 'postmortem'>('copy-paste');
+  const [activeTab, setActiveTab] = useState<'copy-paste' | 'characters' | 'amulets' | 'myths-routes' | 'anti-boring' | 'sardinian-figures' | 'secret-caves' | 'swarm' | 'files' | 'postmortem' | 'finalize-books'>('copy-paste');
   const [selectedFileName, setSelectedFileName] = useState<string>('B02_C01.md');
   const [activeCategory, setActiveCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -347,6 +349,18 @@ export default function App() {
             <BrainCircuit className="w-4 h-4 text-indigo-400" />
             <span>Swarm Training (20)</span>
           </button>
+
+          <button
+            onClick={() => setActiveTab('finalize-books')}
+            className={`py-3 px-3.5 flex items-center gap-1.5 border-b-2 transition-colors cursor-pointer shrink-0 ${
+              activeTab === 'finalize-books'
+                ? 'border-cyan-400 text-white bg-stone-800'
+                : 'border-transparent hover:text-white hover:bg-stone-800/60'
+            }`}
+          >
+            <BookOpen className="w-4 h-4 text-cyan-400" />
+            <span>Finalize Books</span>
+          </button>
           
           <button
             onClick={() => setActiveTab('files')}
@@ -523,6 +537,11 @@ export default function App() {
         {/* Tab 6: Swarm Training Center */}
         {activeTab === 'swarm' && (
           <SwarmTrainingCenter />
+        )}
+
+        {/* Tab: Finalize Books */}
+        {activeTab === 'finalize-books' && (
+          <FinalizeBooks />
         )}
 
         {/* Tab 2: File Explorer */}

@@ -28,9 +28,12 @@ import {
   type SardinianMyth
 } from '../data/mythRouteData';
 import SardinianMythologiesDatabase from './SardinianMythologiesDatabase';
+import SardinianInteractiveMap from './SardinianInteractiveMap';
+import SardinianTimelineGraph from './SardinianTimelineGraph';
+import MythConsensusHeatmap from './MythConsensusHeatmap';
 
 export default function MythRouteAuditor() {
-  const [activeSubTab, setActiveSubTab] = useState<'sites-map' | 'myths-canon' | 'route-calculator' | 'prose-auditor'>('sites-map');
+  const [activeSubTab, setActiveSubTab] = useState<'sites-map' | 'myths-canon' | 'route-calculator' | 'prose-auditor' | 'consensus-heatmap'>('sites-map');
   const [selectedLocation, setSelectedLocation] = useState<HistoricalLocation>(SARDINIAN_LOCATIONS_DATABASE[0]);
   const [searchLocation, setSearchLocation] = useState<string>('');
   const [copiedId, setCopiedId] = useState<string | null>(null);
@@ -50,6 +53,38 @@ export default function MythRouteAuditor() {
       setCopiedId(id);
       setTimeout(() => setCopiedId(null), 2500);
     });
+  };
+
+  const handleDownloadCsv = () => {
+    const sanitizeCsvCell = (val: string) => {
+      let str = String(val);
+      if (/^[=+\-@]/.test(str)) {
+        str = `'` + str;
+      }
+      return `"${str.replace(/"/g, '""')}"`;
+    };
+
+    const headers = ['ID', 'Site Name', 'Sardinian Name', 'Province', 'Category', 'Historical Era', 'DistanceFromOristano_Km', 'Canon Significance'];
+    const rows = SARDINIAN_LOCATIONS_DATABASE.map(l => [
+      sanitizeCsvCell(l.id),
+      sanitizeCsvCell(l.name),
+      sanitizeCsvCell(l.sardinianName),
+      sanitizeCsvCell(l.province),
+      sanitizeCsvCell(l.category),
+      sanitizeCsvCell(l.historicalEra),
+      sanitizeCsvCell(String(l.travelParameters.distanceFromOristanoKm)),
+      sanitizeCsvCell(l.canonSignificance)
+    ]);
+
+    const csvContent = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.setAttribute('href', url);
+    link.setAttribute('download', `sardinian_myth_route_audit_report_${new Date().toISOString().slice(0, 10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const filteredLocations = useMemo(() => {
@@ -185,6 +220,14 @@ export default function MythRouteAuditor() {
 
           <div className="flex flex-wrap items-center gap-2">
             <button
+              onClick={handleDownloadCsv}
+              className="px-3.5 py-2 bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer"
+            >
+              <FileSearch className="w-4 h-4 text-amber-700" />
+              <span>Download Myth & Route CSV Report</span>
+            </button>
+
+            <button
               onClick={() => handleCopy(JSON.stringify(SARDINIAN_LOCATIONS_DATABASE, null, 2), 'locations-json')}
               className={`px-3.5 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer ${
                 copiedId === 'locations-json'
@@ -256,15 +299,28 @@ export default function MythRouteAuditor() {
             <FileSearch className="w-3.5 h-3.5 text-amber-700" />
             Live Prose Route Auditor
           </button>
+
+          <button
+            onClick={() => setActiveSubTab('consensus-heatmap')}
+            className={`px-3.5 py-1.5 rounded-lg flex items-center gap-1.5 transition-all cursor-pointer ${
+              activeSubTab === 'consensus-heatmap'
+                ? 'bg-amber-100 text-amber-900 font-bold border border-amber-300 shadow-2xs'
+                : 'text-stone-600 hover:bg-stone-100'
+            }`}
+          >
+            <Sparkles className="w-3.5 h-3.5 text-cyan-600" />
+            Myth Consensus Heatmap
+          </button>
         </div>
       </div>
 
-      {/* SUB-TAB 1: HISTORICAL & UNESCO SITES */}
+      {/* SUB-TAB 1: HISTORICAL & UNESCO SITES & INTERACTIVE MAP */}
       {activeSubTab === 'sites-map' && (
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           
-          {/* Sites List (5 cols) */}
-          <div className="lg:col-span-5 space-y-3">
+          {/* Sites List (4 cols) */}
+          <div className="lg:col-span-4 space-y-3">
             <div className="bg-white rounded-xl border border-stone-200 p-3 shadow-xs">
               <div className="relative">
                 <Search className="w-3.5 h-3.5 text-stone-400 absolute left-3 top-2.5" />
@@ -278,14 +334,14 @@ export default function MythRouteAuditor() {
               </div>
             </div>
 
-            <div className="space-y-2 max-h-[580px] overflow-y-auto pr-1">
+            <div className="space-y-2 max-h-[640px] overflow-y-auto pr-1">
               {filteredLocations.map((loc) => {
                 const isSelected = selectedLocation.id === loc.id;
                 return (
                   <div
                     key={loc.id}
                     onClick={() => setSelectedLocation(loc)}
-                    className={`p-3.5 rounded-xl border transition-all cursor-pointer flex items-start justify-between gap-2.5 ${
+                    className={`p-3 rounded-xl border transition-all cursor-pointer flex items-start justify-between gap-2 ${
                       isSelected
                         ? 'bg-amber-50/90 border-amber-400 shadow-sm'
                         : 'bg-white hover:bg-stone-50 border-stone-200 shadow-2xs'
@@ -322,12 +378,20 @@ export default function MythRouteAuditor() {
             </div>
           </div>
 
-          {/* Site Detail Inspector (7 cols) */}
-          <div className="lg:col-span-7 bg-white rounded-xl border border-stone-200 p-5 shadow-xs space-y-4">
+          {/* Interactive SVG / D3 Map (4 cols) */}
+          <div className="lg:col-span-4">
+            <SardinianInteractiveMap
+              selectedLocation={selectedLocation}
+              onSelectLocation={(loc) => setSelectedLocation(loc)}
+            />
+          </div>
+
+          {/* Site Detail Inspector (4 cols) */}
+          <div className="lg:col-span-4 bg-white rounded-xl border border-stone-200 p-5 shadow-xs space-y-4 max-h-[700px] overflow-y-auto">
             <div className="flex items-start justify-between gap-3 pb-3 border-b border-stone-100">
               <div>
                 <div className="flex items-center gap-2">
-                  <h2 className="text-xl font-black text-stone-900 tracking-tight">
+                  <h2 className="text-lg font-black text-stone-900 tracking-tight">
                     {selectedLocation.name}
                   </h2>
                   {selectedLocation.unescoStatus?.isUnesco && (
@@ -346,35 +410,29 @@ export default function MythRouteAuditor() {
                   const dump = `### ${selectedLocation.name}\n- Sardinian: ${selectedLocation.sardinianName}\n- Era: ${selectedLocation.historicalEra}\n- Significance: ${selectedLocation.canonSignificance}\n- Transit from Oristano: ${selectedLocation.travelParameters.distanceFromOristanoKm} km (${selectedLocation.travelParameters.avgRailTravelMinutes} min rail)`;
                   handleCopy(dump, selectedLocation.id);
                 }}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
+                className={`px-2.5 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
                   copiedId === selectedLocation.id
                     ? 'bg-emerald-700 text-white'
                     : 'bg-stone-100 hover:bg-stone-200 text-stone-800 border border-stone-200'
                 }`}
               >
                 {copiedId === selectedLocation.id ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5 text-stone-500" />}
-                <span>{copiedId === selectedLocation.id ? 'Copied' : 'Copy Site Data'}</span>
+                <span>{copiedId === selectedLocation.id ? 'Copied' : 'Copy'}</span>
               </button>
             </div>
 
             {/* Coordinates & Physical Profile */}
-            <div className="p-3 bg-stone-50 rounded-lg border border-stone-200 grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+            <div className="p-3 bg-stone-50 rounded-lg border border-stone-200 grid grid-cols-2 gap-2 text-xs">
               <div>
                 <span className="text-[10px] font-bold uppercase tracking-wider text-stone-500">Coordinates</span>
-                <div className="font-mono font-semibold text-stone-900 mt-0.5">
+                <div className="font-mono font-semibold text-stone-900 mt-0.5 text-[11px]">
                   {selectedLocation.coordinates.lat}° N, {selectedLocation.coordinates.lng}° E
                 </div>
               </div>
               <div>
                 <span className="text-[10px] font-bold uppercase tracking-wider text-stone-500">Elevation</span>
-                <div className="font-mono font-semibold text-stone-900 mt-0.5">
-                  {selectedLocation.coordinates.elevationMeters} meters ASL
-                </div>
-              </div>
-              <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-stone-500">Historical Era</span>
-                <div className="font-semibold text-stone-900 mt-0.5">
-                  {selectedLocation.historicalEra}
+                <div className="font-mono font-semibold text-stone-900 mt-0.5 text-[11px]">
+                  {selectedLocation.coordinates.elevationMeters}m ASL
                 </div>
               </div>
             </div>
@@ -390,23 +448,23 @@ export default function MythRouteAuditor() {
             </div>
 
             {/* Travel Parameters from Oristano Base */}
-            <div className="p-3.5 bg-stone-50 rounded-lg border border-stone-200 space-y-2 text-xs">
+            <div className="p-3 bg-stone-50 rounded-lg border border-stone-200 space-y-2 text-xs">
               <span className="font-bold text-stone-900 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
                 <Train className="w-3.5 h-3.5 text-stone-600" />
-                Transit Arithmetic from Oristano Base (Distance: {selectedLocation.travelParameters.distanceFromOristanoKm} km)
+                Transit from Oristano ({selectedLocation.travelParameters.distanceFromOristanoKm} km)
               </span>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px]">
-                <div className="p-2 bg-white rounded border border-stone-200">
-                  <span className="text-stone-500">Rail Route:</span>
-                  <div className="font-bold text-stone-900">{selectedLocation.travelParameters.railRouteAvailable ? `${selectedLocation.travelParameters.avgRailTravelMinutes} min` : 'No direct rail'}</div>
+              <div className="grid grid-cols-3 gap-1 text-[10px]">
+                <div className="p-1.5 bg-white rounded border border-stone-200">
+                  <span className="text-stone-500">Rail:</span>
+                  <div className="font-bold text-stone-900">{selectedLocation.travelParameters.railRouteAvailable ? `${selectedLocation.travelParameters.avgRailTravelMinutes}m` : 'None'}</div>
                 </div>
-                <div className="p-2 bg-white rounded border border-stone-200">
-                  <span className="text-stone-500">Walking In Rain:</span>
-                  <div className="font-bold text-stone-900">{selectedLocation.travelParameters.walkingPaceHours} hours (Packs)</div>
+                <div className="p-1.5 bg-white rounded border border-stone-200">
+                  <span className="text-stone-500">Walk:</span>
+                  <div className="font-bold text-stone-900">{selectedLocation.travelParameters.walkingPaceHours}h</div>
                 </div>
-                <div className="p-2 bg-white rounded border border-stone-200">
-                  <span className="text-stone-500">Regional Fare:</span>
-                  <div className="font-bold text-stone-900">€{selectedLocation.travelParameters.fareCostEUR.toFixed(2)} EUR</div>
+                <div className="p-1.5 bg-white rounded border border-stone-200">
+                  <span className="text-stone-500">Fare:</span>
+                  <div className="font-bold text-stone-900">€{selectedLocation.travelParameters.fareCostEUR.toFixed(1)}</div>
                 </div>
               </div>
             </div>
@@ -415,7 +473,7 @@ export default function MythRouteAuditor() {
             <div className="p-3 bg-rose-50/60 rounded-lg border border-rose-200 space-y-1 text-xs">
               <span className="font-bold text-rose-900 uppercase tracking-wider text-[11px] flex items-center gap-1">
                 <ShieldAlert className="w-3.5 h-3.5 text-rose-700" />
-                Archaeological Preservation & Canon Boundaries
+                Preservation & Canon Boundaries
               </span>
               <ul className="list-disc list-inside space-y-1 text-stone-700 text-[11px] pt-1">
                 {selectedLocation.preservationRules.map((rule, idx) => (
@@ -425,6 +483,12 @@ export default function MythRouteAuditor() {
             </div>
           </div>
         </div>
+
+        {/* Synchronized Timeline Graph */}
+        <div className="mt-5">
+          <SardinianTimelineGraph />
+        </div>
+        </>
       )}
 
       {/* SUB-TAB 2: SARDINIAN MYTHS & FOLKLORE */}
@@ -627,6 +691,11 @@ export default function MythRouteAuditor() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* SUB-TAB 5: MYTH CONSENSUS HEATMAP */}
+      {activeSubTab === 'consensus-heatmap' && (
+        <MythConsensusHeatmap />
       )}
     </div>
   );
